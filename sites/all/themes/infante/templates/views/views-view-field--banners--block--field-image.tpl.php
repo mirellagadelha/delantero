@@ -2,21 +2,25 @@
 
 	<div class="container">
 
-		<?php if (isset($row->field_field_legenda[0]['rendered']['#markup'])) : ?>
+		<div class="fields-banner">
 
-			<div class="text"><?php print $row->field_field_legenda[0]['rendered']['#markup']; ?></div>
+			<?php if (isset($row->field_field_legenda[0]['rendered']['#markup'])) : ?>
 
-		<?php endif; ?>
+				<div class="text"><?php print $row->field_field_legenda[0]['rendered']['#markup']; ?></div>
 
-		<?php if (isset($row->field_field_link[0]['rendered']['#element']['url'])) : ?>
+			<?php endif; ?>
 
-			<div class="link">
+			<?php if (isset($row->field_field_link[0]['rendered']['#element']['url'])) : ?>
 
-				<a href="<?php print $row->field_field_link[0]['rendered']['#element']['url']; ?>"><?php print $row->field_field_link[0]['rendered']['#element']['title']; ?></a>
+				<div class="link">
 
-			</div>
+					<a class="btn btn-default-blue" href="<?php print $row->field_field_link[0]['rendered']['#element']['url']; ?>"><?php print $row->field_field_link[0]['rendered']['#element']['title']; ?></a>
 
-		<?php endif ?>
+				</div>
+
+			<?php endif ?>
+
+		</div>
 
 	</div>
 
