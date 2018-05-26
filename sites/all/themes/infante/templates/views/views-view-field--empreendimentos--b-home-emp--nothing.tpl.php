@@ -1,4 +1,4 @@
-<div class="row carousel-empreendimentos col-md-6">
+<div class="row carousel-empreendimentos">
 
 	<div class="icons-list">
 
