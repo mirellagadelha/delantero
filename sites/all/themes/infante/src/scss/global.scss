@@ -141,6 +141,11 @@ header{
 			color: $main-gray;
 			font-size: 18px;
 		}
+		.btn{
+			&:after{
+
+			}
+		}
 	}
 }
 .css-block-empreendimentos{
@@ -184,5 +189,18 @@ header{
 				}
 			}
 		}
+	}
+}
+
+#block-views-blocos-customizados-b-custom{
+	.first-block{
+		padding: 0;
+		height: 360px;
+	}
+	.about-infante{
+		height: 360px;
+		align-items: center;
+    	justify-content: center;
+    	display: flex;
 	}
 }

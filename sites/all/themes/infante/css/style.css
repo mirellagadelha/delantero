@@ -216,3 +216,15 @@ header .navbar-header .logo {
   background: white;
   padding: 10px;
 }
+
+#block-views-blocos-customizados-b-custom .first-block {
+  padding: 0;
+  height: 360px;
+}
+
+#block-views-blocos-customizados-b-custom .about-infante {
+  height: 360px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
