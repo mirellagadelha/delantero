@@ -4,9 +4,11 @@
 
 		<div class="fields-banner">
 
+			<div class="title"><?php print $row->node_title; ?></div>
+
 			<?php if (isset($row->field_field_legenda[0]['rendered']['#markup'])) : ?>
 
-				<div class="text"><?php print $row->field_field_legenda[0]['rendered']['#markup']; ?></div>
+				<div class="subtitle"><?php print $row->field_field_legenda[0]['rendered']['#markup']; ?></div>
 
 			<?php endif; ?>
 
@@ -25,6 +27,3 @@
 	</div>
 
 </div>
-
-
-
