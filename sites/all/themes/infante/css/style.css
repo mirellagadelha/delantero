@@ -98,20 +98,36 @@ header .navbar-header .logo {
 }
 
 /* Superbanner */
-.css-bloco-superbanner {
+.css-block-superbanner {
   position: relative;
 }
 
-.css-bloco-superbanner .super-banner {
+.css-block-superbanner .super-banner {
   height: 510px;
   background-size: cover;
 }
 
-.css-bloco-superbanner .super-banner .container {
+.css-block-superbanner .super-banner .container {
   height: 510px;
   align-items: center;
   justify-content: center;
   display: flex;
+}
+
+.css-block-superbanner .super-banner .container .fields-banner {
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  width: 500px;
+}
+
+.css-block-superbanner .super-banner .container .fields-banner .title {
+  font-size: 35px;
+}
+
+.css-block-superbanner .super-banner .container .fields-banner .subtitle {
+  font-size: 18px;
+  margin: 20px 0;
 }
 
 .owl-pagination {
@@ -135,7 +151,7 @@ header .navbar-header .logo {
 
 .owl-buttons div {
   background: transparent !important;
-  color: #00aecc;
+  color: #00aecc !important;
 }
 
 /* Empreendimentos Home */
@@ -147,5 +163,20 @@ header .navbar-header .logo {
 
 #block-block-2 .list-empreendimentos span {
   color: #656565;
+  font-size: 18px;
+}
+
+.css-block-empreendimentos .owl-item {
+  width: 310px !important;
+  margin: 0 20px 0 0;
+}
+
+.css-block-empreendimentos .owl-item .carousel-empreendimentos .icons-list i {
+  color: white;
+  background: #00aecc;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  padding: 14px;
   font-size: 18px;
 }

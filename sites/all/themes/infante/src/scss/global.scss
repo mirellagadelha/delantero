@@ -71,7 +71,7 @@ header{
 }
 
 /* Superbanner */
-.css-bloco-superbanner{
+.css-block-superbanner {
 	position: relative;
 	.super-banner{
 		height: 510px;
@@ -81,6 +81,19 @@ header{
 			align-items: center;
     		justify-content: center;
     		display: flex;
+    		.fields-banner{
+    			color: white;
+    			margin: 0 auto;  
+    			text-align: center;
+    			width: 500px;
+    			.title{
+    				font-size: 35px;
+    			}
+    			.subtitle{
+    				font-size: 18px;
+    				margin: 20px 0;
+    			}
+    		}
 		}
 	}
 }
@@ -108,7 +121,7 @@ header{
 .owl-buttons{
 	div{
 		background: transparent !important;
-		color: $main-blue;
+		color: $main-blue !important;
 	}
 }
 
@@ -123,6 +136,25 @@ header{
 		span{
 			color: $main-gray;
 			font-size: 18px;
+		}
+	}
+}
+.css-block-empreendimentos{
+	.owl-item{
+		width: 310px !important;
+		margin: 0 20px 0 0;
+		.carousel-empreendimentos{
+			.icons-list{
+				i{
+					color: white;
+					background: $main-blue;
+					display: inline-block;
+					width: 45px;
+					height: 45px;
+					padding: 14px;
+					font-size: 18px;
+				}
+			}
 		}
 	}
 }
