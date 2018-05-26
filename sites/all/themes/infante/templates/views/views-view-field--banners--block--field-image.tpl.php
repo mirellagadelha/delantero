@@ -1,6 +1,6 @@
 <div class="row super-banner" style="background-image: url(<?php print image_style_url('1929x512', $row->field_field_image[0]['raw']['uri']); ?>)">
 
-	<div class="content">
+	<div class="container">
 
 		<?php if (isset($row->field_field_legenda[0]['rendered']['#markup'])) : ?>
 

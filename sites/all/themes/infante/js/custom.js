@@ -4,6 +4,8 @@
 
         $(document).tooltip();
 
+        $(".region-blockgroup-g-empreendimentos").addClass("container");
+
         $('.owl-item .icons-list').each(function(index, value) { 
 
             var subtitle = $(".owl-item .item-"+index);
