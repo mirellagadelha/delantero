@@ -133,6 +133,10 @@ header{
 			color: $dark-blue;
 			line-height: 40px;
 		}
+		.subtitle{
+			font-size: 18px;
+			margin: 15px 0;
+		}
 		span{
 			color: $main-gray;
 			font-size: 18px;
@@ -144,7 +148,12 @@ header{
 		width: 310px !important;
 		margin: 0 20px 0 0;
 		.carousel-empreendimentos{
+			float: left;
+    		margin: 0 20px 0 0 !important;
 			.icons-list{
+				   position: absolute;
+    				top: -30px;
+    				left: 10px;
 				.title-icon{
 					position: relative;
 					display: inline-block;
@@ -160,14 +169,16 @@ header{
 					.subtitle {
 						visibility: hidden;
 						position: absolute;
-						bottom: 0;
-					   left: 0;
+						bottom: 20px;
+					   left: 10px;
 	   				z-index: 1000;
 	    				width: 200px;
 					}
 					&:hover{
 						.subtitle {
 							visibility: visible;
+    						background: white;
+						   padding: 10px;
 						}
 					}
 				}
