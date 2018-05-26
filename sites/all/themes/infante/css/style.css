@@ -150,8 +150,31 @@ header .navbar-header .logo {
 }
 
 .owl-buttons div {
-  background: transparent !important;
+  background: #fff !important;
   color: #00aecc !important;
+  position: absolute;
+  top: 42%;
+  z-index: 100;
+  border-radius: 100% !important;
+  width: 60px;
+  height: 60px;
+  padding: 18px !important;
+}
+
+.owl-buttons div:hover {
+  opacity: 0.8 !important;
+}
+
+.owl-buttons div i {
+  font-size: 26px;
+}
+
+.owl-buttons .owl-prev {
+  left: 20px;
+}
+
+.owl-buttons .owl-next {
+  right: 20px;
 }
 
 /* Empreendimentos Home */
@@ -217,7 +240,7 @@ header .navbar-header .logo {
   padding: 10px;
 }
 
-#block-views-blocos-customizados-b-custom .first-block {
+#block-views-blocos-customizados-b-custom .first-block, #block-views-blocos-customizados-b-custom .second-block {
   padding: 0;
   height: 360px;
 }
@@ -227,4 +250,42 @@ header .navbar-header .logo {
   align-items: center;
   justify-content: center;
   display: flex;
+}
+
+#block-views-blocos-customizados-b-custom .about-infante .title {
+  font-size: 35px;
+  color: #294052;
+}
+
+#block-views-blocos-customizados-b-custom .about-infante .text {
+  font-size: 18px;
+}
+
+#block-views-blocos-customizados-b-custom .second-block .news-infante {
+  height: 360px;
+}
+
+#block-views-blocos-customizados-b-custom .second-block .news-form {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 0 60px;
+}
+
+#block-views-blocos-customizados-b-custom .second-block .news-form .webform-client-form {
+  width: 100%;
+}
+
+#block-webform-client-block-59 {
+  padding: 60px 0;
+}
+
+#block-webform-client-block-59 .webform-component--indentifique-se .form-item-submitted-indentifique-se label:after {
+  content: "\f1ce";
+  font-family: FontAwesome;
+}
+
+#block-webform-client-block-59 .webform-component--indentifique-se .form-item-submitted-indentifique-se:checked label:after {
+  content: "\f058";
+  font-family: FontAwesome;
 }

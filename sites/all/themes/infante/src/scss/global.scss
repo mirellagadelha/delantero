@@ -120,8 +120,27 @@ header{
 }
 .owl-buttons{
 	div{
-		background: transparent !important;
+    	background: #fff !important;
 		color: $main-blue !important;
+		position: absolute;
+    	top: 42%;
+    	z-index: 100;
+    	border-radius: 100% !important;
+    	width: 60px;
+    	height: 60px;
+    	padding: 18px !important;
+    	&:hover{
+    		opacity: 0.8 !important;
+    	}
+    	i {
+    		font-size: 26px;
+    	}
+	}
+	.owl-prev{
+		left: 20px;
+	}
+	.owl-next{
+		right: 20px;
 	}
 }
 
@@ -193,7 +212,7 @@ header{
 }
 
 #block-views-blocos-customizados-b-custom{
-	.first-block{
+	.first-block, .second-block{
 		padding: 0;
 		height: 360px;
 	}
@@ -202,5 +221,44 @@ header{
 		align-items: center;
     	justify-content: center;
     	display: flex;
+    	.title{
+    		font-size: 35px;
+    		color: $dark-blue;
+    	}
+    	.text{
+    		font-size: 18px;
+    	}
+	}
+	.second-block{
+		.news-infante{
+			height: 360px;
+		}
+		.news-form{
+			align-items: center;
+		   justify-content: center;
+		   display: flex;
+			padding: 0 60px;
+			.webform-client-form{
+				width: 100%;
+			}
+		}
+	}
+}
+
+#block-webform-client-block-59{
+	padding: 60px 0;
+	.webform-component--indentifique-se {
+		.form-item-submitted-indentifique-se{
+			label:after{
+				content: "\f1ce";
+				font-family :FontAwesome;
+			}
+		}
+		.form-item-submitted-indentifique-se:checked{
+			label:after{
+				content: "\f058";
+				font-family :FontAwesome;
+			}
+		}
 	}
 }
