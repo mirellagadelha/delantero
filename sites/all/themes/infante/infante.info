@@ -32,4 +32,4 @@ stylesheets[all][] = css/style.css
 ;;;;;;;;;;;;;;;;;;;;;
 
 scripts[] = js/custom.js
-
+scripts[] = js/jquery-ui.js
