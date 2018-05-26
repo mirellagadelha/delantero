@@ -18,23 +18,23 @@
             
         });
 
-        $('.owl-item .icons-list').each(function(index, value) { 
+        // $('.owl-item .icons-list').each(function(index, value) { 
 
-            var subtitle = $(".owl-item .item-"+index);
+        //     var subtitle = $(".owl-item .item-"+index);
 
-            var i = 0;
+        //     var i = 0;
 
-            $(this).find("i").each(function(){
+        //     $(this).find("i").each(function(){
 
-                subtitle = $(".owl-item .item-"+index+" .icons-list .item-"+i).text();
+        //         subtitle = $(".owl-item .item-"+index+" .icons-list .item-"+i).text();
 
-                $(this).attr("title", subtitle);
+        //         $(this).attr("title", subtitle);
 
-                i++;
+        //         i++;
 
-            });
+        //     });
 
-        });
+        // });
 
     });
 

@@ -6,24 +6,28 @@
 
 			<?php foreach ($row->field_field_diferenciais as $key => $item): ?>
 
-				<?php $fc = entity_load_single('field_collection_item', $item['raw']['value']); ?>
+				<div class="title-icon">
 
-				<?php
+					<?php $fc = entity_load_single('field_collection_item', $item['raw']['value']); ?>
 
-					$icon = array(
-			    
-			    		'#theme' => 'icon',
-			    
-			    		'#bundle' => $fc->field_icone['und'][0]['bundle'],
-			    
-			    		'#icon' => $fc->field_icone['und'][0]['icon'],
-			  		);
-			  		
-			  		print drupal_render($icon);
+					<?php
 
-				?>
+						$icon = array(
+				    
+				    		'#theme' => 'icon',
+				    
+				    		'#bundle' => $fc->field_icone['und'][0]['bundle'],
+				    
+				    		'#icon' => $fc->field_icone['und'][0]['icon'],
+				  		);
+				  		
+				  		print drupal_render($icon);
 
-				<div class="subtitle item-<?php print $key?>"><?php print $fc->field_legenda['und'][0]['value']; ?></div>
+					?>
+
+					<div class="subtitle item-<?php print $key?>"><?php print $fc->field_legenda['und'][0]['value']; ?></div>
+
+				</div>
 
 			<?php endforeach;?>
 
