@@ -24,8 +24,8 @@ regions[page_bottom]    = 'Page bottom'
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Stylesheets
 ;;;;;;;;;;;;;;;;;;;;;
-
-stylesheets[all][] = css/style.css
+stylesheets[all][] = css/fontawesome.min.css
+stylesheets[all][] = css/style.min.css
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Script
