@@ -45,6 +45,10 @@ a {
   text-transform: uppercase;
 }
 
+.btn-default {
+  border: 1px solid #00aecc;
+}
+
 .btn-default-blue {
   background: #00aecc;
   color: white;
@@ -246,11 +250,19 @@ header .navbar-header .logo {
   height: 360px;
 }
 
+#block-views-blocos-customizados-b-custom .first-block .left-image, #block-views-blocos-customizados-b-custom .second-block .left-image {
+  padding: 0 !important;
+}
+
 #block-views-blocos-customizados-b-custom .about-infante {
   height: 360px;
   align-items: center;
   justify-content: center;
   display: flex;
+}
+
+#block-views-blocos-customizados-b-custom .about-infante .info {
+  width: 300px;
 }
 
 #block-views-blocos-customizados-b-custom .about-infante .title {
@@ -262,29 +274,75 @@ header .navbar-header .logo {
   font-size: 18px;
 }
 
+#block-views-blocos-customizados-b-custom .about-infante .link:after {
+  margin: 0 0 0 5px;
+  content: "\f061";
+  font-family: FontAwesome;
+}
+
 #block-views-blocos-customizados-b-custom .second-block .news-infante {
-  height: 360px;
+  height: 480px;
 }
 
 #block-views-blocos-customizados-b-custom .second-block .news-form {
+  height: 480px;
+  background-color: #3e7292;
   align-items: center;
   justify-content: center;
   display: flex;
   padding: 0 60px;
+  color: white;
 }
 
 #block-views-blocos-customizados-b-custom .second-block .news-form .webform-client-form {
-  width: 100%;
+  width: 500px;
+}
+
+#block-views-blocos-customizados-b-custom .second-block .news-form .webform-client-form .control-label {
+  margin: 0 0 5px 20px;
+  text-transform: uppercase;
+}
+
+#block-views-blocos-customizados-b-custom .second-block .news-form .webform-client-form .form-radios .control-label {
+  margin: 0;
+  padding: 10px 35px;
+  border: 1px solid #7195ac;
+  border-radius: 50px;
+  color: #7195ac;
+}
+
+#block-views-blocos-customizados-b-custom .second-block .news-form .webform-client-form .form-radios .control-label.active {
+  border-color: #00aecc;
+  background-color: #00aecc;
+  color: white;
+}
+
+#block-views-blocos-customizados-b-custom .second-block .news-form .webform-client-form .form-radios .control-label input {
+  display: none;
+}
+
+#block-views-blocos-customizados-b-custom .second-block .news-form .webform-client-form .form-radios .form-item {
+  display: inline-block;
+  margin: 0 30px 0 0;
+}
+
+#block-views-blocos-customizados-b-custom .second-block .news-form .webform-client-form input {
+  border: 1px solid #7195ac;
+  background-color: transparent;
+  border-radius: 60px;
 }
 
 #block-views-blocos-customizados-b-custom .second-block .webform-component--indentifique-se .form-item-submitted-indentifique-se label:after {
   content: "\f1ce";
   font-family: FontAwesome;
+  margin: 0 0 0 10px;
 }
 
 #block-views-blocos-customizados-b-custom .second-block .webform-component--indentifique-se .form-item-submitted-indentifique-se label.active:after {
   content: "\f058";
   font-family: FontAwesome;
+  margin: 0 0 0 10px;
+  font-size: 16px;
 }
 
 #block-webform-client-block-59 {
@@ -294,11 +352,14 @@ header .navbar-header .logo {
 #block-webform-client-block-59 .webform-component--indentifique-se .form-item-submitted-indentifique-se label:after {
   content: "\f1ce";
   font-family: FontAwesome;
+  margin: 0 0 0 10px;
 }
 
 #block-webform-client-block-59 .webform-component--indentifique-se .form-item-submitted-indentifique-se:checked label:after {
   content: "\f058";
   font-family: FontAwesome;
+  margin: 0 0 0 10px;
+  font-size: 16px;
 }
 
 footer {
