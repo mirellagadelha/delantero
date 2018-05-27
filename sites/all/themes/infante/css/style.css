@@ -47,6 +47,7 @@ a {
 
 .btn-default {
   border: 1px solid #00aecc;
+  color: #00aecc;
 }
 
 .btn-default-blue {
@@ -268,20 +269,38 @@ header .navbar-header .logo {
 #block-views-blocos-customizados-b-custom .about-infante .title {
   font-size: 35px;
   color: #294052;
+  line-height: 40px;
 }
 
 #block-views-blocos-customizados-b-custom .about-infante .text {
   font-size: 18px;
+  margin: 20px 0;
 }
 
 #block-views-blocos-customizados-b-custom .about-infante .link:after {
-  margin: 0 0 0 5px;
+  margin: 0 0 0 8px;
   content: "\f061";
   font-family: FontAwesome;
 }
 
 #block-views-blocos-customizados-b-custom .second-block .news-infante {
   height: 480px;
+}
+
+#block-views-blocos-customizados-b-custom .second-block .news-infante .news-fields {
+  float: right;
+  width: 500px;
+  margin: 60px 60px 0 0;
+}
+
+#block-views-blocos-customizados-b-custom .second-block .news-infante .news-fields .title {
+  font-size: 35px;
+  color: #294052;
+  line-height: 40px;
+}
+
+#block-views-blocos-customizados-b-custom .second-block .news-infante .news-fields .text {
+  font-size: 18px;
 }
 
 #block-views-blocos-customizados-b-custom .second-block .news-form {
