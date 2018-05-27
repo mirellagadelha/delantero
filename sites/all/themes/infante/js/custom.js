@@ -2,6 +2,8 @@
     
     $(function () {
 
+        $("#webform-client-form-8 .webform-submit").removeClass("btn-default").addClass("btn-default-blue");
+
         $(".region-blockgroup-g-empreendimentos").addClass("container");
 
         $(".owl-prev").html('<i class="fa fa-chevron-left"></i>');
