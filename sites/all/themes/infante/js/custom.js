@@ -2,13 +2,15 @@
     
     $(function () {
 
+        $("#webform-client-form-8 .webform-submit").removeClass("btn-default").addClass("btn-default-blue");
+
         $(".region-blockgroup-g-empreendimentos").addClass("container");
 
         $(".owl-prev").html('<i class="fa fa-chevron-left"></i>');
 
         $(".owl-next").html('<i class="fa fa-chevron-right"></i>');
 
-        $('#webform-client-form-8 input').click(function () {
+        $('#webform-client-form-8 input, #webform-client-form-59 input').click(function () {
     
             $('input:not(:checked)').parent().removeClass("active");
 

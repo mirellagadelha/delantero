@@ -12,7 +12,7 @@
 
 				<div class="text"><?php print $view->result[0]->field_field_descricao[0]['rendered']['#markup']; ?></div>
 
-				<a class="link" href="<?php print $view->result[0]->field_field_link[0]['raw']['url']?>">Veja Mais</a>
+				<a class="link btn btn-default" href="<?php print $view->result[0]->field_field_link[0]['raw']['url']?>">Veja Mais</a>
 
 			</div>
 
