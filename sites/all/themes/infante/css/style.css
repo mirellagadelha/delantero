@@ -152,10 +152,11 @@ header .navbar-header .logo {
 .owl-buttons div {
   background: #fff !important;
   color: #00aecc !important;
+  border: 2px solid #00aecc;
   position: absolute;
   top: 42%;
   z-index: 100;
-  border-radius: 100% !important;
+  border-radius: 0 !important;
   width: 60px;
   height: 60px;
   padding: 18px !important;
@@ -276,6 +277,16 @@ header .navbar-header .logo {
   width: 100%;
 }
 
+#block-views-blocos-customizados-b-custom .second-block .webform-component--indentifique-se .form-item-submitted-indentifique-se label:after {
+  content: "\f1ce";
+  font-family: FontAwesome;
+}
+
+#block-views-blocos-customizados-b-custom .second-block .webform-component--indentifique-se .form-item-submitted-indentifique-se label.active:after {
+  content: "\f058";
+  font-family: FontAwesome;
+}
+
 #block-webform-client-block-59 {
   padding: 60px 0;
 }
@@ -288,4 +299,8 @@ header .navbar-header .logo {
 #block-webform-client-block-59 .webform-component--indentifique-se .form-item-submitted-indentifique-se:checked label:after {
   content: "\f058";
   font-family: FontAwesome;
+}
+
+footer {
+  border: 0;
 }

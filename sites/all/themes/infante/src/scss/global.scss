@@ -122,10 +122,11 @@ header{
 	div{
     	background: #fff !important;
 		color: $main-blue !important;
+		border: 2px solid $main-blue;
 		position: absolute;
     	top: 42%;
     	z-index: 100;
-    	border-radius: 100% !important;
+    	border-radius: 0 !important;
     	width: 60px;
     	height: 60px;
     	padding: 18px !important;
@@ -242,6 +243,21 @@ header{
 				width: 100%;
 			}
 		}
+		.webform-component--indentifique-se {
+			.form-item-submitted-indentifique-se{
+				label:after{
+					content: "\f1ce";
+					font-family :FontAwesome;
+				}
+		}
+		.form-item-submitted-indentifique-se{
+			label.active:after{
+				content: "\f058";
+				font-family :FontAwesome;
+			}
+		}
+	}
+
 	}
 }
 
@@ -261,4 +277,8 @@ header{
 			}
 		}
 	}
+}
+
+footer{
+	border: 0;
 }
