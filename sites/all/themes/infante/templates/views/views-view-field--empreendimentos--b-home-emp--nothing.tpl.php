@@ -43,6 +43,8 @@
 
 		</div>
 
+		<div class="tag"><?php print $row->field_field_tag[0]['rendered']['#title']; ?></div>
+
 		<a href="">Ver Mais</a>
 
 	</div>

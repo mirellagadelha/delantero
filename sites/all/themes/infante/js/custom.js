@@ -2,8 +2,6 @@
     
     $(function () {
 
-        $(document).tooltip();
-
         $(".region-blockgroup-g-empreendimentos").addClass("container");
 
         $(".owl-prev").html('<i class="fa fa-chevron-left"></i>');
@@ -18,24 +16,32 @@
             
         });
 
-        // $('.owl-item .icons-list').each(function(index, value) { 
+        $('.owl-item .icons-list').each(function(index, value) { 
 
-        //     var subtitle = $(".owl-item .item-"+index);
+            var subtitle = $(".owl-item .item-"+index);
 
-        //     var i = 0;
+            var i = 0;
 
-        //     $(this).find("i").each(function(){
+            $(this).find("i").each(function(){
 
-        //         subtitle = $(".owl-item .item-"+index+" .icons-list .item-"+i).text();
+                subtitle = $(".owl-item .item-"+index+" .icons-list .item-"+i).text();
 
-        //         $(this).attr("title", subtitle);
+                $(this).attr("title", subtitle);
 
-        //         i++;
+                $(this).addClass("tooltip-icon");
 
-        //     });
+                i++;
 
-        // });
+            });
 
+        });
+
+    });
+
+    $(document).ready(function() {
+            
+        $('.tooltip-icon').tooltipster();
+        
     });
 
 })(jQuery);

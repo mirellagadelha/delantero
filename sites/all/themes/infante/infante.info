@@ -26,6 +26,7 @@ regions[page_bottom]    = 'Page bottom'
 ;;;;;;;;;;;;;;;;;;;;;
 stylesheets[all][] = css/fontawesome.min.css
 stylesheets[all][] = css/style.min.css
+stylesheets[all][] = css/tooltipster.bundle.min.css
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Script
@@ -33,3 +34,4 @@ stylesheets[all][] = css/style.min.css
 
 scripts[] = js/custom.js
 scripts[] = js/jquery-ui.js
+scripts[] = js/tooltipster.bundle.min.js

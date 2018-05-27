@@ -1,0 +1,4 @@
+name = Infante Module
+description = Infante Custom Module
+core = 7.x
+package = "Infante"

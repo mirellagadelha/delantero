@@ -1,21 +1,20 @@
-
-<?php
-//dpm($view->result[0]);
-
-?>
 <div class="row custom-blocks col-md-12">
 
 	<div class="first-block col-md-12">
 		
-		<img class="col-md-6" src="<?php print image_style_url('960x530',  $view->result[0]->field_field_image[0]['raw']['uri']); ?>">
+		<img class="left-image col-md-6" src="<?php print image_style_url('960x530',  $view->result[0]->field_field_image[0]['raw']['uri']); ?>">
 
 		<div class="col-md-6 about-infante">
+
+			<div class="info">
 			
-			<div class="title"><?php print $view->result[0]->node_title; ?></div>
+				<div class="title"><?php print $view->result[0]->node_title; ?></div>
 
-			<div class="text"><?php print $view->result[0]->field_field_descricao[0]['rendered']['#markup']; ?></div>
+				<div class="text"><?php print $view->result[0]->field_field_descricao[0]['rendered']['#markup']; ?></div>
 
-			<a class="link" href="<?php print $view->result[0]->field_field_link[0]['raw']['url']?>">Veja Mais</a>
+				<a class="link" href="<?php print $view->result[0]->field_field_link[0]['raw']['url']?>">Veja Mais</a>
+
+			</div>
 
 		</div>
 
