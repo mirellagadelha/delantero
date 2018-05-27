@@ -1,0 +1,30 @@
+<?php
+
+function infante_library(){
+
+    global $base_url;
+
+    $libraries = array();
+
+    $videojsPath = libraries_get_path('video-js');
+
+    $videojsYtPath = libraries_get_path('video-js-youtube');
+
+    $videojsResolutionSwitcher = libraries_get_path('videojs-resolution-switcher');
+
+    $libraries['video-js'] = array(
+        'title' => 'VideoJS',
+        'website' => 'http://videojs.com/',
+        'version' => '5.10.7',
+        'js' => array(
+            $videojsPath . '/video.min.js' => array('scope' => 'footer'),
+            $videojsYtPath . '/dist/Youtube.min.js' => array('scope' => 'footer'),//
+            $videojsResolutionSwitcher . '/lib/videojs-resolution-switcher.js' => array('scope' => 'footer'),
+            "videojs.options.flash.swf = '$base_url/$videojsPath/video-js.swf'" => array('scope' => 'footer', 'type' => 'inline')
+        ),
+        'css' => array($videojsPath . '/video-js.min.css' => array())
+
+    );
+    
+    return $libraries;
+}

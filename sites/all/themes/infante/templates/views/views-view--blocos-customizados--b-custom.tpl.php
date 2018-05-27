@@ -1,8 +1,3 @@
-
-<?php
-//dpm($view->result[0]);
-
-?>
 <div class="row custom-blocks col-md-12">
 
 	<div class="first-block col-md-12">
