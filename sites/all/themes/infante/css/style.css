@@ -247,7 +247,7 @@ header .navbar-header .logo {
 
 #block-views-blocos-customizados-b-custom .first-block, #block-views-blocos-customizados-b-custom .second-block {
   padding: 0;
-  height: 360px;
+  height: 480px;
 }
 
 #block-views-blocos-customizados-b-custom .first-block .left-image, #block-views-blocos-customizados-b-custom .second-block .left-image {
@@ -349,6 +349,64 @@ header .navbar-header .logo {
   padding: 60px 0;
 }
 
+#block-webform-client-block-59 .webform-client-form .control-label {
+  margin: 0 0 5px 20px;
+  text-transform: uppercase;
+  color: #294052;
+}
+
+#block-webform-client-block-59 .webform-client-form .form-radios .control-label {
+  margin: 0;
+  padding: 10px 35px;
+  border: 1px solid #d1d1d1;
+  border-radius: 50px;
+  color: #d1d1d1;
+}
+
+#block-webform-client-block-59 .webform-client-form .form-radios .control-label.active {
+  border-color: #00aecc;
+  background-color: #00aecc;
+  color: white;
+}
+
+#block-webform-client-block-59 .webform-client-form .form-radios .control-label input {
+  display: none;
+}
+
+#block-webform-client-block-59 .webform-client-form .form-radios .form-item {
+  display: inline-block;
+  margin: 0 30px 0 0;
+}
+
+#block-webform-client-block-59 .webform-client-form input {
+  border: 1px solid #d1d1d1;
+  background-color: transparent;
+  border-radius: 60px;
+}
+
+#block-webform-client-block-59 .webform-client-form #edit-submitted-terreno-ajax-wrapper {
+  position: relative;
+}
+
+#block-webform-client-block-59 .webform-client-form #edit-submitted-terreno-ajax-wrapper .help-block {
+  position: absolute;
+  right: 30px;
+  bottom: 25px;
+}
+
+#block-webform-client-block-59 .webform-client-form .form-submit {
+  margin: 20px 0 0;
+}
+
+#block-webform-client-block-59 .webform-client-form .form-actions .webform-submit {
+  margin: 0;
+  display: inline-block;
+}
+
+#block-webform-client-block-59 .webform-component--indentifique-se {
+  margin: 0;
+}
+
 #block-webform-client-block-59 .webform-component--indentifique-se .form-item-submitted-indentifique-se label:after {
   content: "\f1ce";
   font-family: FontAwesome;
@@ -363,5 +421,26 @@ header .navbar-header .logo {
 }
 
 footer {
-  border: 0;
+  border: 0 !important;
+  background-color: #95c4d7;
+  color: white;
+}
+
+footer .info-infante {
+  margin: 20px 0 0;
+}
+
+footer .info-infante .first {
+  font-size: 14px;
+  color: #294052;
+  font-family: "SourceSansProBold", sans;
+}
+
+footer .info-infante p {
+  margin: 0 !important;
+}
+
+footer .phone span, footer .fax span {
+  color: #294052;
+  font-family: "SourceSansProBold", sans;
 }

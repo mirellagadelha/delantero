@@ -216,7 +216,7 @@ header{
 #block-views-blocos-customizados-b-custom{
 	.first-block, .second-block{
 		padding: 0;
-		height: 360px;
+		height: 480px;
 		.left-image{
 			padding: 0 !important;
 		}
@@ -313,7 +313,58 @@ header{
 
 #block-webform-client-block-59{
 	padding: 60px 0;
+				.webform-client-form{
+				.control-label{
+					margin: 0 0 5px 20px;
+					text-transform: uppercase;
+					color: $dark-blue;
+				}
+				.form-radios{
+					.control-label{
+						margin: 0;
+						padding: 10px 35px;
+						border: 1px solid $light-gray;
+					   border-radius: 50px;
+					   color: $light-gray;
+					   &.active{
+					   	border-color: $main-blue;
+					   	background-color: $main-blue;
+					   	color: white;
+					   }
+						input{
+							display: none;
+						}
+					}
+					.form-item{
+						display: inline-block;
+						margin: 0 30px 0 0;
+					}
+				}
+				input{
+					border: 1px solid $light-gray;
+					background-color: transparent;
+					border-radius: 60px;
+				}
+				#edit-submitted-terreno-ajax-wrapper{
+					position: relative;
+					.help-block{
+						position: absolute;
+    					right: 30px;
+					   bottom: 25px;
+					}
+				}
+				.form-submit{
+					margin: 20px 0 0;
+				}
+				.form-actions{
+					.webform-submit{
+						margin: 0;
+						display: inline-block;
+					}
+				}
+			}
 	.webform-component--indentifique-se {
+		margin: 0;
 		.form-item-submitted-indentifique-se{
 			label:after{
 				content: "\f1ce";
@@ -333,5 +384,24 @@ header{
 }
 
 footer{
-	border: 0;
+	border: 0 !important;
+	background-color: $light-blue;
+	color: white;
+	.info-infante{
+		margin: 20px 0 0;
+		.first{
+			font-size: 14px;
+			color: $dark-blue;
+			font-family: $font-sourcerbold;
+		}
+		p{
+			margin: 0 !important;
+		}
+	}
+	.phone, .fax{
+		span{
+			color: $dark-blue;
+			font-family: $font-sourcerbold;
+		}
+	}
 }
