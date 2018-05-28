@@ -183,6 +183,10 @@ header .navbar-header .logo {
   right: 20px;
 }
 
+.region-blockgroup-g-empreendimentos {
+  margin: 60px auto;
+}
+
 /* Empreendimentos Home */
 #block-block-2 .list-empreendimentos .title {
   font-size: 35px;
@@ -368,6 +372,22 @@ header .navbar-header .logo {
   padding: 60px 0;
 }
 
+#block-webform-client-block-59 .sale {
+  width: 520px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+#block-webform-client-block-59 .sale h1 {
+  font-size: 36px;
+  color: #294052;
+}
+
+#block-webform-client-block-59 .sale .body {
+  font-size: 18px;
+  color: #656565;
+}
+
 #block-webform-client-block-59 .webform-client-form .control-label {
   margin: 0 0 5px 20px;
   text-transform: uppercase;
@@ -439,10 +459,60 @@ header .navbar-header .logo {
   font-size: 16px;
 }
 
+.node-type-institucional .css-block-bannerinterna .super-banner {
+  height: 370px;
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-family: "SourceSansProBold", sans;
+  text-transform: uppercase;
+}
+
+.node-type-institucional h1.page-header {
+  display: none;
+}
+
+.node-type-institucional .region-content {
+  width: 750px;
+  margin: 60px auto;
+}
+
+.node-type-institucional .region-content .image-highlighted {
+  text-align: center;
+  margin: 0 0 30px;
+}
+
+.node-type-institucional .region-content .image-highlighted img {
+  display: inline-block;
+}
+
+.node-type-institucional .region-content .body {
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.node-type-institucional .region-content .body p {
+  margin: 0 0 30px;
+}
+
+.node-type-institucional .region-content .body a {
+  color: #00aecc;
+  text-decoration: underline;
+}
+
+.node-type-institucional .region-content .body iframe {
+  width: 100%;
+}
+
 footer {
   border: 0 !important;
   background-color: #95c4d7;
-  color: white;
+  color: #656565;
+  padding: 30px 0 0 !important;
+  margin: 30px 0 0 !important;
 }
 
 footer .info-infante {
@@ -462,4 +532,35 @@ footer .info-infante p {
 footer .phone span, footer .fax span {
   color: #294052;
   font-family: "SourceSansProBold", sans;
+}
+
+footer .col-md-4 {
+  text-align: right;
+}
+
+footer .whats-phone {
+  background-color: #294052;
+  padding: 30px 0;
+  margin: 30px 0 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "SourceSansProBold", sans;
+}
+
+footer .whats-phone i, footer .whats-phone .info, footer .whats-phone .text, footer .whats-phone .phone {
+  display: inline-block;
+  font-size: 18px;
+}
+
+footer .whats-phone i, footer .whats-phone .info {
+  margin: 0 5px 0 0;
+  color: #00aecc;
+}
+
+footer .whats-phone .text, footer .whats-phone .phone {
+  margin: 0 5px 0 0;
+}
+
+footer .whats-phone .info .text {
+  color: white;
 }
