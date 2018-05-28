@@ -6,7 +6,4 @@
 sites/*/private
 
 # Ignore gulp files.
-gulpfile.js
-package.json
-package-lock.json
 node_modules

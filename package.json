@@ -1,0 +1,19 @@
+{
+  "name": "gulp-intro",
+  "version": "1.0.0",
+  "description": "Gulp Sample",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Demetrius Caminha",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.1"
+  },
+  "dependencies": {
+    "gulp-sourcemaps": "^2.6.4"
+  }
+}
