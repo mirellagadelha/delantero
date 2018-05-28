@@ -1,0 +1,96 @@
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+	header{
+		.navbar-header{
+			.logo{
+				margin: 40px 0 0 40px;
+				width: 280px;
+				height: 70px;
+			}
+			.navbar-toggle{
+				border: 0;
+				position: absolute;
+				top: 40px;
+				right: 20px;
+				&:focus{ background: transparent; }
+				.icon-bar{
+					height: 3px;
+					width: 24px;
+					background-color: $dark-blue;
+				}
+			}
+		}
+	}
+	.css-block-superbanner{
+		.owl-buttons{ display: none; }
+	}
+	#block-block-2{
+		text-align: center;
+		margin: 0 0 40px;
+	}
+	.css-block-empreendimentos {
+		.owl-carousel{
+			.owl-wrapper-outer{
+				width: 100%;
+			}
+		}
+	}
+	#block-views-blocos-customizados-b-custom{
+		.first-block, .second-block{
+			height: inherit;
+		}
+		.second-block{
+			.news-infante, .news-form{
+				height: auto;
+				overflow: hidden;
+			}
+			.news-infante{
+				.news-fields{
+					float: inherit;
+					width: inherit;
+					margin: 40px 20px;
+					text-align: center;
+				}
+			}
+			.news-form{
+				padding: 60px 10px;
+				.webform-client-form .form-radios .form-item {
+					display: inline-block;
+					margin: 0 20px 0 0;
+				}
+			}
+		}
+	}
+	#block-webform-client-block-59{
+		.sale{
+			width: inherit;
+			margin: 60px 10px;
+		}
+		.webform-client-form {
+			.form-radios {
+				.control-label{
+					padding: 10px 25px;
+				}
+				.form-item {
+					display: inline-block;
+					margin: 0 20px 20px 0;
+				}
+			}
+			.form-actions{
+				text-align: center;
+				margin: 20px 0 0;
+			}
+		}
+	}
+}
+
+/* 
+##Device = Tablets, Ipads (portrait)
+##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
