@@ -40,9 +40,12 @@ a{
 }
 
 .tooltipster-base{
-	background: white;
-	border: 0;
-	color: $main-gray;
+	width: 260px;
+	.tooltipster-box{
+		background: white;
+		border: 0;
+		color: $main-gray;
+	}
 }
 
 /* Header/Topo */
