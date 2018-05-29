@@ -105,7 +105,7 @@
 					
 			<?php if (isset($node->field_lista['und'])): ?>
 
-				<div class="col-md-6list-tour">
+				<div class="col-md-6 list-tour">
 
 					<?php foreach ($node->field_lista['und'] as $key => $item): ?>
 

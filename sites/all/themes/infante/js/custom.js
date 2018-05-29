@@ -14,6 +14,10 @@
 
         $(".owl-next").html('<i class="fa fa-chevron-right"></i>');
 
+        $(".node-type-empreendimentos .owl-prev").html('<i class="fa fa-arrow-left"></i>');
+
+        $(".node-type-empreendimentos .owl-next").html('<i class="fa fa-arrow-right"></i>');
+
         $('#webform-client-form-8 input, #webform-client-form-59 input').click(function () {
     
             $('input:not(:checked)').parent().removeClass("active");
