@@ -237,7 +237,7 @@ header{
 	}
 	.owl-item{
 		width: 310px !important;
-		margin: 0 20px 20px 0;
+		margin: 0 5px 10px 10px;
 		.carousel-empreendimentos{
 			float: left;
 			margin: 0 30px 0 0 !important;
@@ -281,7 +281,16 @@ header{
 				-moz-box-shadow: 0px 3px 23px 0px rgba(201,201,201,1);
 				box-shadow: 0px 3px 23px 0px rgba(201,201,201,1);
 				border-radius: 0 0 10px 10px;
-				.tag{ display: none; }
+				.tag{
+					background-color: $main-blue;
+				    position: absolute;
+				    top: 50px;
+				    right: -130px;
+				    width: 290px;
+				    transform: rotate(35deg);
+				    color: #fff;
+				    padding: 20px;
+				}
 				a{
 					position: absolute;
     				top: 98px;
@@ -300,6 +309,16 @@ header{
 					margin: 0;
 					padding: 15px 20px;
 					border: none;
+					.local{
+						font-size: 12px;
+						text-transform: uppercase;
+					}
+					.title{
+						font-size: 18px;
+						text-transform: uppercase;
+						color: $dark-blue;
+						font-family: $font-sourcerbold;
+					}
 				}
 			}
 		}
@@ -592,8 +611,12 @@ header{
 			}
 		}
 	}
-	.download{
-		margin: 40px auto;
+	.link{
+		text-align: center;		
+		.download{
+			margin: 40px auto;
+			display: inline-block;
+		}
 	}
 	.second-section{
 		h2{

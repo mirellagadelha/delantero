@@ -284,7 +284,7 @@ header .navbar-header .logo {
 
 .css-block-empreendimentos .owl-item {
   width: 310px !important;
-  margin: 0 20px 20px 0;
+  margin: 0 5px 10px 10px;
 }
 
 .css-block-empreendimentos .owl-item .carousel-empreendimentos {
@@ -338,7 +338,14 @@ header .navbar-header .logo {
 }
 
 .css-block-empreendimentos .owl-item .carousel-empreendimentos .content-image .tag {
-  display: none;
+  background-color: #00aecc;
+  position: absolute;
+  top: 50px;
+  right: -130px;
+  width: 290px;
+  transform: rotate(35deg);
+  color: #fff;
+  padding: 20px;
 }
 
 .css-block-empreendimentos .owl-item .carousel-empreendimentos .content-image a {
@@ -361,6 +368,18 @@ header .navbar-header .logo {
   margin: 0;
   padding: 15px 20px;
   border: none;
+}
+
+.css-block-empreendimentos .owl-item .carousel-empreendimentos .content-image .footer .local {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.css-block-empreendimentos .owl-item .carousel-empreendimentos .content-image .footer .title {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #294052;
+  font-family: "SourceSansProBold", sans;
 }
 
 #block-views-blocos-customizados-b-custom .first-block, #block-views-blocos-customizados-b-custom .second-block {
@@ -677,8 +696,13 @@ header .navbar-header .logo {
   margin: 16px 0 0;
 }
 
-.node-type-empreendimentos .download {
+.node-type-empreendimentos .link {
+  text-align: center;
+}
+
+.node-type-empreendimentos .link .download {
   margin: 40px auto;
+  display: inline-block;
 }
 
 .node-type-empreendimentos .second-section h2 {
