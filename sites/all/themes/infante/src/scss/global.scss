@@ -656,10 +656,12 @@ header{
 		.gallery-tour{
 			height: 340px;
 			padding: 0 !important;
+			margin: 0 0 30px;
 		}
 		.list-tour{
 			padding: 0;
 			height: 340px;
+			margin: 0 0 30px;
 			.title-icon{
 				overflow: hidden;
 				margin: 0 0 30px;
@@ -676,9 +678,34 @@ header{
 				}
 			}
 		}
-		.form-interest, .download-folder{
-			float: left;
-			width: 50%;
+		.form-interest{
+			padding: 45px 0;
+			h2{
+				margin: 0 0 20px;
+				font-size: 34px;
+				color: $dark-blue;
+				text-align: left;
+			}
+			.webform-client-form{
+				padding: 0 140px 0 0;
+				.webform-component--preencha-dados{
+					font-size: 18px;
+				}
+			}
+		}
+		.download-folder{
+			padding: 0;
+			.folder{
+				height: 500px;
+				background-size: cover;
+				.download{
+					position: absolute;
+					bottom: 20px;
+					left: 50%;
+					display: inline-block;
+					margin-left: -100px;
+				}
+			}
 		}
 	}
 	.galeria{
