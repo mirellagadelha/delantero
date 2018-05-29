@@ -138,6 +138,8 @@
 
 				</div>
 
+				</div>
+
 			<?php endif;?>
 			
 			<div class="col-md-6 form-interest">
