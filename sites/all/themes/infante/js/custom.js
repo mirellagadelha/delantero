@@ -4,6 +4,8 @@
 
         $("#webform-client-form-8 .webform-submit, #webform-client-form-59 .webform-submit").removeClass("btn-default").addClass("btn-default-blue");
 
+        $( ".help-block a" ).remove();
+
         $(".region-blockgroup-g-empreendimentos").addClass("container");
 
         $(".owl-prev").html('<i class="fa fa-chevron-left"></i>');
@@ -43,8 +45,10 @@
     $(document).ready(function() {
             
         $('.tooltip-icon').tooltipster({
-   trigger: 'click'
-});
+   
+            trigger: 'click'
+
+        });
         
     });
 

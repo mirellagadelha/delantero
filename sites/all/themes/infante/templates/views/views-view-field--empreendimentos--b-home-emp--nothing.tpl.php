@@ -47,13 +47,19 @@
 
 		<a href="">Ver Mais</a>
 
-		<div class="footer-info">
-		
-			<div class="local">
+		<div class="footer">
 
-				<span>Local: <?php print $row->field_field_local[0]['rendered']['#markup']; ?></span>
+			<div class="tag"><?php print $row->field_field_tag[0]['rendered']['#title']; ?></div>
 
-				<div class="title"><?php print $row->node_title;?></div>
+			<div class="info">
+			
+				<div class="local">
+
+					<span>Local: <?php print $row->field_field_local[0]['rendered']['#markup']; ?></span>
+
+					<div class="title"><?php print $row->node_title;?></div>
+
+				</div>
 
 			</div>
 
