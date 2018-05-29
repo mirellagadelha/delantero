@@ -138,17 +138,52 @@
 			width: inherit;
 			padding: 0 20px;
 		}
-		.form-actions{
-			text-align: center;
+		.webform-client-form{
+			&.webform-client-form-65{
+				width: inherit;
+				margin: 40px auto !important;
+				padding: 0 10px;
+			}
 		}
 		.webform-component--indentifique-se {
 			margin: 0 0 20px;
 			.form-radios {
 				.control-label{
-				    padding: 10px 25px;
+					padding: 10px 25px;
 				}
 				.form-item{
 					margin: 0 15px 0 0;
+				}
+			}
+		}
+		.form-actions{
+			text-align: center;
+		}
+	}
+	.node-type-empreendimentos {
+		.description{
+			width: inherit;
+		}
+		.second-section {
+			.gallery-tour {
+				height: 230px;
+			}
+			.list-tour{
+				height: auto;
+				.tour-fields{
+					padding: 0 20px;
+				}
+			}
+			.form-interest{
+				padding: 30px 10px;
+				h2{
+					text-align: center;
+				}
+				.webform-client-form{
+					padding: 0;
+					.webform-component--preencha-dados{
+						text-align: center;
+					}
 				}
 			}
 		}

@@ -38,14 +38,13 @@
 	<div class="content-image">
 
 		<div class="image">
-			
+			<a class="link-hover" href="">Ver Mais</a>
 			<img class="img-responsive" src="<?php print image_style_url('311x243', $row->field_field_image[0]['raw']['uri']); ?>">
 			<div class="tag"><?php print $row->field_field_tag[0]['rendered']['#title']; ?></div>
 
 		</div>
 
 
-		<a class="link-hover" href="">Ver Mais</a>
 
 		<div class="footer">
 
