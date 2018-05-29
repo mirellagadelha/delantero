@@ -719,6 +719,25 @@ header .navbar-header .logo {
 .node-type-empreendimentos .second-section .list-tour {
   float: left;
   width: 50%;
+  padding: 30px 0 30px 60px;
+}
+
+.node-type-empreendimentos .second-section .list-tour .title-icon {
+  overflow: hidden;
+  margin: 0 0 30px;
+}
+
+.node-type-empreendimentos .second-section .list-tour .title-icon i {
+  float: left;
+  margin: 0px 10px 0 0;
+  font-size: 26px;
+  color: #00aecc;
+  width: 40px;
+  text-align: center;
+}
+
+.node-type-empreendimentos .second-section .list-tour .title-icon .subtitle {
+  color: #00aecc;
 }
 
 footer {
