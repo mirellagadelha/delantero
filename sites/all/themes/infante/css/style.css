@@ -95,6 +95,10 @@ a {
   border-top-color: #fff !important;
 }
 
+h1.page-header {
+  display: none;
+}
+
 /* Header/Topo */
 header .navbar-header .logo {
   margin: 30px 0 0;
@@ -169,6 +173,18 @@ header .navbar-header .logo {
 .css-block-superbanner .super-banner .container .fields-banner .subtitle {
   font-size: 18px;
   margin: 20px 0;
+}
+
+.css-block-bannerinterna .super-banner {
+  height: 370px;
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-family: "SourceSansProBold", sans;
+  text-transform: uppercase;
 }
 
 .owl-pagination {
@@ -297,6 +313,7 @@ header .navbar-header .logo {
   position: absolute;
   top: -30px;
   left: 10px;
+  z-index: 2;
 }
 
 .css-block-empreendimentos .owl-item .carousel-empreendimentos .icons-list .title-icon {
@@ -335,17 +352,23 @@ header .navbar-header .logo {
   -moz-box-shadow: 0px 3px 23px 0px #c9c9c9;
   box-shadow: 0px 3px 23px 0px #c9c9c9;
   border-radius: 0 0 10px 10px;
+  position: relative;
+  overflow: hidden;
 }
 
 .css-block-empreendimentos .owl-item .carousel-empreendimentos .content-image .tag {
   background-color: #00aecc;
-  position: absolute;
-  top: 50px;
-  right: -130px;
-  width: 290px;
-  transform: rotate(35deg);
   color: #fff;
-  padding: 20px;
+  font-family: "SourceSansProBold", sans;
+  padding: 10px 70px;
+  position: absolute;
+  right: -90px;
+  text-align: center;
+  text-transform: uppercase;
+  transform: rotate(35deg);
+  top: 20px;
+  width: 290px;
+  letter-spacing: 1px;
 }
 
 .css-block-empreendimentos .owl-item .carousel-empreendimentos .content-image a {
@@ -502,6 +525,29 @@ header .navbar-header .logo {
   font-size: 16px;
 }
 
+.webform-client-form label {
+  margin: 0 0 5px 20px;
+  text-transform: uppercase;
+  color: #294052;
+  font-weight: normal;
+  font-family: "SourceSansProBold", sans;
+}
+
+.webform-client-form input {
+  border: 1px solid #d1d1d1;
+  background-color: transparent;
+  border-radius: 60px;
+}
+
+.webform-client-form .form-submit {
+  margin: 20px 0 0;
+}
+
+.webform-client-form .form-actions .webform-submit {
+  margin: 0;
+  display: inline-block;
+}
+
 #block-webform-client-block-59 {
   padding: 60px 0;
 }
@@ -522,13 +568,19 @@ header .navbar-header .logo {
   color: #656565;
 }
 
-#block-webform-client-block-59 .webform-client-form .control-label {
+.webform-component--indentifique-se {
+  margin: 0;
+}
+
+.webform-component--indentifique-se .control-label {
   margin: 0 0 5px 20px;
   text-transform: uppercase;
   color: #294052;
+  font-weight: normal;
+  font-family: "SourceSansProBold", sans;
 }
 
-#block-webform-client-block-59 .webform-client-form .form-radios .control-label {
+.webform-component--indentifique-se .form-radios .control-label {
   margin: 0;
   padding: 10px 35px;
   border: 1px solid #d1d1d1;
@@ -536,77 +588,48 @@ header .navbar-header .logo {
   color: #d1d1d1;
 }
 
-#block-webform-client-block-59 .webform-client-form .form-radios .control-label.active {
+.webform-component--indentifique-se .form-radios .control-label.active {
   border-color: #00aecc;
   background-color: #00aecc;
   color: white;
 }
 
-#block-webform-client-block-59 .webform-client-form .form-radios .control-label input {
+.webform-component--indentifique-se .form-radios .control-label input {
   display: none;
 }
 
-#block-webform-client-block-59 .webform-client-form .form-radios .form-item {
+.webform-component--indentifique-se .form-radios .form-item {
   display: inline-block;
   margin: 0 30px 0 0;
 }
 
-#block-webform-client-block-59 .webform-client-form input {
+.webform-component--indentifique-se input {
   border: 1px solid #d1d1d1;
   background-color: transparent;
   border-radius: 60px;
 }
 
-#block-webform-client-block-59 .webform-client-form #edit-submitted-terreno-ajax-wrapper {
+.webform-component--indentifique-se #edit-submitted-terreno-ajax-wrapper {
   position: relative;
 }
 
-#block-webform-client-block-59 .webform-client-form #edit-submitted-terreno-ajax-wrapper .help-block {
+.webform-component--indentifique-se #edit-submitted-terreno-ajax-wrapper .help-block {
   position: absolute;
   right: 30px;
   bottom: 25px;
 }
 
-#block-webform-client-block-59 .webform-client-form .form-submit {
-  margin: 20px 0 0;
-}
-
-#block-webform-client-block-59 .webform-client-form .form-actions .webform-submit {
-  margin: 0;
-  display: inline-block;
-}
-
-#block-webform-client-block-59 .webform-component--indentifique-se {
-  margin: 0;
-}
-
-#block-webform-client-block-59 .webform-component--indentifique-se .form-item-submitted-indentifique-se label:after {
+.webform-component--indentifique-se .form-item-submitted-indentifique-se label:after {
   content: "\f1ce";
   font-family: FontAwesome;
   margin: 0 0 0 10px;
 }
 
-#block-webform-client-block-59 .webform-component--indentifique-se .form-item-submitted-indentifique-se:checked label:after {
+.webform-component--indentifique-se .form-item-submitted-indentifique-se:checked label:after {
   content: "\f058";
   font-family: FontAwesome;
   margin: 0 0 0 10px;
   font-size: 16px;
-}
-
-.node-type-institucional .css-block-bannerinterna .super-banner {
-  height: 370px;
-  text-align: center;
-  color: white;
-  font-size: 45px;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  font-family: "SourceSansProBold", sans;
-  text-transform: uppercase;
-}
-
-.node-type-institucional h1.page-header {
-  display: none;
 }
 
 .node-type-institucional .region-content {
@@ -637,13 +660,9 @@ header .navbar-header .logo {
   text-decoration: underline;
 }
 
-.node-type-institucional .region-content .body .video-js {
+.node-type-institucional .region-content .video .video-js {
   width: 100%;
   height: 450px;
-}
-
-.node-type-empreendimentos h1.page-header {
-  display: none;
 }
 
 .node-type-empreendimentos .image-highlighted {
@@ -712,14 +731,15 @@ header .navbar-header .logo {
 }
 
 .node-type-empreendimentos .second-section .gallery-tour {
-  float: left;
-  width: 50%;
+  height: 340px;
+  padding: 0 !important;
+  margin: 0 0 30px;
 }
 
 .node-type-empreendimentos .second-section .list-tour {
-  float: left;
-  width: 50%;
-  padding: 30px 0 30px 60px;
+  padding: 0;
+  height: 340px;
+  margin: 0 0 30px;
 }
 
 .node-type-empreendimentos .second-section .list-tour .title-icon {
@@ -740,13 +760,60 @@ header .navbar-header .logo {
   color: #00aecc;
 }
 
-.node-type-empreendimentos .second-section .form-interest, .node-type-empreendimentos .second-section .download-folder {
-  float: left;
-  width: 50%;
+.node-type-empreendimentos .second-section .form-interest {
+  padding: 45px 0;
+}
+
+.node-type-empreendimentos .second-section .form-interest h2 {
+  margin: 0 0 20px;
+  font-size: 34px;
+  color: #294052;
+  text-align: left;
+}
+
+.node-type-empreendimentos .second-section .form-interest .webform-client-form {
+  padding: 0 140px 0 0;
+}
+
+.node-type-empreendimentos .second-section .form-interest .webform-client-form .webform-component--preencha-dados {
+  font-size: 18px;
+}
+
+.node-type-empreendimentos .second-section .download-folder {
+  padding: 0;
+}
+
+.node-type-empreendimentos .second-section .download-folder .folder {
+  height: 500px;
+  background-size: cover;
+}
+
+.node-type-empreendimentos .second-section .download-folder .folder .download {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  display: inline-block;
+  margin-left: -100px;
 }
 
 .node-type-empreendimentos .galeria {
   clear: both;
+}
+
+.node-type-webform .sale {
+  width: 520px;
+  margin: 40px auto 40px;
+  text-align: center;
+}
+
+.node-type-webform .sale h1 {
+  font-size: 36px;
+  color: #294052;
+}
+
+.node-type-webform .sale .body {
+  font-size: 18px;
+  color: #656565;
 }
 
 footer {

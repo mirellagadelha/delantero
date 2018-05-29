@@ -40,10 +40,10 @@
 		<div class="image">
 			
 			<img class="img-responsive" src="<?php print image_style_url('311x243', $row->field_field_image[0]['raw']['uri']); ?>">
+			<div class="tag"><?php print $row->field_field_tag[0]['rendered']['#title']; ?></div>
 
 		</div>
 
-		<div class="tag"><?php print $row->field_field_tag[0]['rendered']['#title']; ?></div>
 
 		<a class="link-hover" href="">Ver Mais</a>
 
