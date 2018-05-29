@@ -87,7 +87,7 @@
 
 		</div>
 
-		<div class="container second-section">
+		<div class="second-section">
 			
 			<h2>Tour do Bairro</h2>
 
