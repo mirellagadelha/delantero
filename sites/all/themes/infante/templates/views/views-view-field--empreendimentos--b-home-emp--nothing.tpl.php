@@ -51,7 +51,7 @@
 
 			<div class="local">
 
-				<span><?php print $row->field_field_local[0]['rendered']['#markup']; ?></span>
+				<span>Local: <?php print $row->field_field_local[0]['rendered']['#markup']; ?></span>
 
 				<div class="title"><?php print $row->node_title;?></div>
 
