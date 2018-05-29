@@ -45,13 +45,13 @@
 
 		<div class="tag"><?php print $row->field_field_tag[0]['rendered']['#title']; ?></div>
 
-		<a href="">Ver Mais</a>
+		<a class="link-hover" href="">Ver Mais</a>
 
 		<div class="footer">
 
 			<div class="local">
 
-				<span>Local: <?php print $row->field_field_local[0]['rendered']['#markup']; ?></span>
+				<span><?php print $row->field_field_local[0]['rendered']['#markup']; ?></span>
 
 				<div class="title"><?php print $row->node_title;?></div>
 
