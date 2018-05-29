@@ -171,9 +171,9 @@
 
 		</div>
 
-		<div class="galeria">
+		<div class="location">
 
-			<div class="">
+			<div class="location-fields">
 
 				<i class="fa fa-map-marker" aria-hidden="true"></i>
 				
@@ -183,7 +183,7 @@
 
 			</div>
 
-			<div class="image-gmap">
+			<div class="location-gmap">
 
 				<?php print  render($content['field_localizacao']); ?>
 

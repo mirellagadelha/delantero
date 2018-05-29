@@ -50,11 +50,7 @@
 
     $(document).ready(function() {
             
-        $('.tooltip-icon').tooltipster({
-   
-            trigger: 'click'
-
-        });
+        $('.tooltip-icon').tooltipster();
         
     });
 
