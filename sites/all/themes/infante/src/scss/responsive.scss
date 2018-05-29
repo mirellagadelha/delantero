@@ -85,6 +85,46 @@
 			}
 		}
 	}
+	.css-block-empreendimentos{
+		.owl-carousel{
+			.owl-buttons{
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				div{
+					display: inline-block;
+					opacity: 1;
+					border: 0;
+					right: inherit !important;
+					left: inherit !important;
+					top: 330px!important;
+					position: relative;
+					background: transparent;
+					i{ font-size: 12px; }
+					&.owl-prev{
+						left: inherit;
+					}
+					&.owl-next{
+						right: inherit;
+					}
+				}
+			}
+		}
+	}
+	footer{
+		#block-views-rodape-block{
+			text-align: center;
+			img{
+				display: inline-block;
+			}
+		}
+		.col-md-3{
+			margin: 20px 0;
+		}
+		.col-md-4{
+			text-align: center;
+		}
+	}
 }
 
 /* 
