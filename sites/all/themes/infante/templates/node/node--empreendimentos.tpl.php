@@ -87,62 +87,58 @@
 
 		</div>
 
-		<div class="second-section">
-
-			<div class="container">
+		<div class="container second-section">
 			
-				<h2>Tour do Bairro</h2>
+			<h2>Tour do Bairro</h2>
 
-				<div class="gallery-tour">
+			<div class="col-md-6 gallery-tour">
 					
-					<?php
+				<?php
 
-						$view = views_embed_view('empreendimentos','b_gallery_2');
+					$view = views_embed_view('empreendimentos','b_gallery_2');
 			        
-			        	print $view;
+			        print $view;
 
-					?>
-
-				</div>
-					
-				<?php if (isset($node->field_lista['und'])): ?>
-
-					<div class="list-tour">
-
-						<?php foreach ($node->field_lista['und'] as $key => $item): ?>
-
-							<div class="title-icon">
-
-								<?php $fc = entity_load_single('field_collection_item', $item['value']); ?>
-
-								<?php
-
-									$icon = array(
-							    
-							    		'#theme' => 'icon',
-							    
-							    		'#bundle' => $fc->field_icone['und'][0]['bundle'],
-							    
-							    		'#icon' => $fc->field_icone['und'][0]['icon'],
-							  		);
-							  		
-							  		print drupal_render($icon);
-
-								?>
-
-								<div class="subtitle"><?php print $fc->field_legenda['und'][0]['value']; ?></div>
-
-							</div>
-
-						<?php endforeach;?>
-
-					</div>
-
-				<?php endif;?>
+				?>
 
 			</div>
+					
+			<?php if (isset($node->field_lista['und'])): ?>
+
+				<div class="col-md-6list-tour">
+
+					<?php foreach ($node->field_lista['und'] as $key => $item): ?>
+
+						<div class="title-icon">
+
+							<?php $fc = entity_load_single('field_collection_item', $item['value']); ?>
+
+							<?php
+
+								$icon = array(
+							    
+							    	'#theme' => 'icon',
+							    
+							    	'#bundle' => $fc->field_icone['und'][0]['bundle'],
+							    
+							    	'#icon' => $fc->field_icone['und'][0]['icon'],
+							  	);
+							  		
+							  	print drupal_render($icon);
+
+							?>
+
+							<div class="subtitle"><?php print $fc->field_legenda['und'][0]['value']; ?></div>
+
+						</div>
+
+					<?php endforeach;?>
+
+				</div>
+
+			<?php endif;?>
 			
-			<div class="form-interest">
+			<div class="col-md-6 form-interest">
 				
 				<h2>Tenho Interesse</h2>
 
@@ -159,7 +155,7 @@
 
 			<?php if (isset($node->field_imagem_folder['und']) && isset($node->field_arquivo['und'])):?>
 
-				<div class="download-folder">
+				<div class="col-md-6 download-folder">
 					
 					<div class="folder" style="background-image: url(<?php print file_create_url($node->field_imagem_folder['und'][0]['uri']); ?>)">
 

@@ -250,9 +250,9 @@ $databases = array (
     array (
       'database' => 'infante',
       'username' => 'root',
-      'password' => '',
+      'password' => 'qwe123',
       'host' => 'localhost',
-      'port' => '',
+      'port' => '3306',
       'driver' => 'mysql',
       'prefix' => 'infante_',
     ),

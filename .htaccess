@@ -153,4 +153,6 @@ DirectoryIndex index.php index.html index.htm
   Header always set X-Content-Type-Options nosniff
 </IfModule>
 
-Header set Access-Control-Allow-Origin "*"
+php_value memory_limit 1024M
+php_value post_max_size 100M
+php_value upload_max_filesize 30M
