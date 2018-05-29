@@ -71,9 +71,28 @@ a {
 }
 
 .tooltipster-base {
-  background: white;
-  border: 0;
+  width: 260px !important;
+}
+
+.tooltipster-base .tooltipster-box {
+  background: white !important;
+  border: 0 !important;
+  color: #656565 !important;
+  -webkit-box-shadow: 0px 3px 23px 0px #c9c9c9;
+  -moz-box-shadow: 0px 3px 23px 0px #c9c9c9;
+  box-shadow: 0px 3px 23px 0px #c9c9c9;
+}
+
+.tooltipster-base .tooltipster-box .tooltipster-content {
   color: #656565;
+}
+
+.tooltipster-base .tooltipster-arrow .tooltipster-arrow-border {
+  border-top-color: #fff !important;
+}
+
+.tooltipster-base .tooltipster-arrow .tooltipster-arrow-background {
+  border-top-color: #fff !important;
 }
 
 /* Header/Topo */
