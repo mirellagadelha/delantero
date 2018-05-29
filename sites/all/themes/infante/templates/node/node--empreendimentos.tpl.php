@@ -88,55 +88,59 @@
 		</div>
 
 		<div class="second-section">
+
+			<div class="container">
 			
-			<h2>Tour do Bairro</h2>
+				<h2>Tour do Bairro</h2>
 
-			<div class="gallery-tour">
-				
-				<?php
+				<div class="gallery-tour">
+					
+					<?php
 
-					$view = views_embed_view('empreendimentos','b_gallery_2');
-		        
-		        	print $view;
+						$view = views_embed_view('empreendimentos','b_gallery_2');
+			        
+			        	print $view;
 
-				?>
-
-			</div>
-				
-			<?php if (isset($node->field_lista['und'])): ?>
-
-				<div class="list-tour">
-
-					<?php foreach ($node->field_lista['und'] as $key => $item): ?>
-
-						<div class="title-icon">
-
-							<?php $fc = entity_load_single('field_collection_item', $item['value']); ?>
-
-							<?php
-
-								$icon = array(
-						    
-						    		'#theme' => 'icon',
-						    
-						    		'#bundle' => $fc->field_icone['und'][0]['bundle'],
-						    
-						    		'#icon' => $fc->field_icone['und'][0]['icon'],
-						  		);
-						  		
-						  		print drupal_render($icon);
-
-							?>
-
-							<div class="subtitle"><?php print $fc->field_legenda['und'][0]['value']; ?></div>
-
-						</div>
-
-					<?php endforeach;?>
+					?>
 
 				</div>
+					
+				<?php if (isset($node->field_lista['und'])): ?>
 
-			<?php endif;?>
+					<div class="list-tour">
+
+						<?php foreach ($node->field_lista['und'] as $key => $item): ?>
+
+							<div class="title-icon">
+
+								<?php $fc = entity_load_single('field_collection_item', $item['value']); ?>
+
+								<?php
+
+									$icon = array(
+							    
+							    		'#theme' => 'icon',
+							    
+							    		'#bundle' => $fc->field_icone['und'][0]['bundle'],
+							    
+							    		'#icon' => $fc->field_icone['und'][0]['icon'],
+							  		);
+							  		
+							  		print drupal_render($icon);
+
+								?>
+
+								<div class="subtitle"><?php print $fc->field_legenda['und'][0]['value']; ?></div>
+
+							</div>
+
+						<?php endforeach;?>
+
+					</div>
+
+				<?php endif;?>
+
+			</div>
 			
 			<div class="form-interest">
 				
