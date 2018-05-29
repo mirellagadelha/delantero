@@ -130,13 +130,13 @@
 
 								?>
 
-							<div class="subtitle"><?php print $fc->field_legenda['und'][0]['value']; ?></div>
+								<div class="subtitle"><?php print $fc->field_legenda['und'][0]['value']; ?></div>
+
+							</div>
 
 						<?php endforeach;?>
 
 					</div>
-
-				</div>
 
 				</div>
 
@@ -153,7 +153,6 @@
 					print render($block['content']);
 				
 				?>
-
 
 			</div>
 
