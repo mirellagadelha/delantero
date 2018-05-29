@@ -4,6 +4,8 @@
 
         $("#webform-client-form-8 .webform-submit, #webform-client-form-59 .webform-submit").removeClass("btn-default").addClass("btn-default-blue");
 
+        $("#webform-client-form-59 #edit-submitted-terreno-upload-button").removeClass("btn-primary").addClass("btn-default-gray");
+
         $( ".help-block a" ).remove();
 
         $(".region-blockgroup-g-empreendimentos").addClass("container");
