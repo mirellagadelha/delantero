@@ -624,9 +624,16 @@ header{
 			color: $dark-blue;
 			margin: 40px 0;
 		}
+		.gallery-tour{
+			float: left;
+			width: 50%;
+		}
+		.list-tour{
+			float: left;
+			width: 50%;
+		}
 	}
 }
-
 footer{
 	border: 0 !important;
 	background-color: $light-blue;

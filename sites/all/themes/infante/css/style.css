@@ -711,6 +711,16 @@ header .navbar-header .logo {
   margin: 40px 0;
 }
 
+.node-type-empreendimentos .second-section .gallery-tour {
+  float: left;
+  width: 50%;
+}
+
+.node-type-empreendimentos .second-section .list-tour {
+  float: left;
+  width: 50%;
+}
+
 footer {
   border: 0 !important;
   background-color: #95c4d7;
