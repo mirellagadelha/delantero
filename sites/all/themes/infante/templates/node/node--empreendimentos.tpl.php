@@ -107,9 +107,9 @@
 
 				<div class="col-md-6 list-tour">
 
-					<?php foreach ($node->field_lista['und'] as $key => $item): ?>
+					<div class="tour-fields">
 
-						<div class="tour-fields">
+						<?php foreach ($node->field_lista['und'] as $key => $item): ?>
 
 							<div class="title-icon">
 
@@ -118,25 +118,23 @@
 								<?php
 
 									$icon = array(
-								    
-								    	'#theme' => 'icon',
-								    
-								    	'#bundle' => $fc->field_icone['und'][0]['bundle'],
-								    
-								    	'#icon' => $fc->field_icone['und'][0]['icon'],
-								  	);
-								  		
-								  	print drupal_render($icon);
+							    
+							    		'#theme' => 'icon',
+							    
+							    		'#bundle' => $fc->field_icone['und'][0]['bundle'],
+							    
+							    		'#icon' => $fc->field_icone['und'][0]['icon'],
+							  		);
+							  		
+							  		print drupal_render($icon);
 
 								?>
 
-								<div class="subtitle"><?php print $fc->field_legenda['und'][0]['value']; ?></div>
+							<div class="subtitle"><?php print $fc->field_legenda['und'][0]['value']; ?></div>
 
-							</div>
+						<?php endforeach;?>
 
-						</div>
-
-					<?php endforeach;?>
+					</div>
 
 				</div>
 
