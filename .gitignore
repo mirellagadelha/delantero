@@ -5,5 +5,8 @@
 #sites/*/files
 sites/*/private
 
+#setings/configs
+sites/default/settings.php
+
 # Ignore gulp files.
 node_modules
