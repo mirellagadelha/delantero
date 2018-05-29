@@ -740,6 +740,15 @@ header .navbar-header .logo {
   color: #00aecc;
 }
 
+.node-type-empreendimentos .second-section .form-interest, .node-type-empreendimentos .second-section .download-folder {
+  float: left;
+  width: 50%;
+}
+
+.node-type-empreendimentos .galeria {
+  clear: both;
+}
+
 footer {
   border: 0 !important;
   background-color: #95c4d7;

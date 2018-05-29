@@ -648,6 +648,13 @@ header{
 		    	}
 		    }
 		}
+		.form-interest, .download-folder{
+			float: left;
+			width: 50%;
+		}
+	}
+	.galeria{
+		clear: both;
 	}
 }
 footer{
