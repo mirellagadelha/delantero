@@ -39,7 +39,7 @@
 
 		<div class="image">
 			
-			<img src="<?php print image_style_url('311x243', $row->field_field_image[0]['raw']['uri']); ?>">
+			<img class="img-responsive" src="<?php print image_style_url('311x243', $row->field_field_image[0]['raw']['uri']); ?>">
 
 		</div>
 
@@ -47,15 +47,15 @@
 
 		<a href="">Ver Mais</a>
 
-	</div>
-
-	<div class="footer-info">
+		<div class="footer-info">
 		
-		<div class="local">
+			<div class="local">
 
-			<span>Local: <?php print $row->field_field_local[0]['rendered']['#markup']; ?></span>
+				<span>Local: <?php print $row->field_field_local[0]['rendered']['#markup']; ?></span>
 
-			<div class="title"><?php print $row->node_title;?></div>
+				<div class="title"><?php print $row->node_title;?></div>
+
+			</div>
 
 		</div>
 

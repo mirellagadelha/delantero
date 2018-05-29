@@ -1,6 +1,6 @@
 <div class="container">
 	
-	<img src="<?php print file_create_url($view->result[0]->field_field_image[0]['raw']['uri']); ?>">
+	<img class="img-responsive" src="<?php print file_create_url($view->result[0]->field_field_image[0]['raw']['uri']); ?>">
 
 	<div class="info-infante">
 
@@ -24,7 +24,7 @@
 
 		<div class="col-md-4">
 			
-			<img src="<?php print file_create_url($view->result[0]->field_field_image_2[0]['raw']['uri']); ?>">
+			<img class="img-responsive" src="<?php print file_create_url($view->result[0]->field_field_image_2[0]['raw']['uri']); ?>">
 
 		</div>
 

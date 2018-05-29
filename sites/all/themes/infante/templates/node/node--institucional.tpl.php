@@ -8,7 +8,7 @@
 
 		<div class="image-highlighted">
 			
-			<img src="<?php print file_create_url($node->field_image['und'][0]['uri']); ?>"/>
+			<img class="img-responsive" src="<?php print file_create_url($node->field_image['und'][0]['uri']); ?>"/>
 	    
 	    </div>
 

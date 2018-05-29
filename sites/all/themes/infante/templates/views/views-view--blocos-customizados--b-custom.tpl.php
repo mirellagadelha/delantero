@@ -2,7 +2,7 @@
 
 	<div class="first-block col-md-12">
 		
-		<img class="left-image col-md-6" src="<?php print image_style_url('960x530',  $view->result[0]->field_field_image[0]['raw']['uri']); ?>">
+		<img class="img-responsive left-image col-md-6" src="<?php print image_style_url('960x530',  $view->result[0]->field_field_image[0]['raw']['uri']); ?>">
 
 		<div class="col-md-6 about-infante">
 

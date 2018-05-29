@@ -6,9 +6,7 @@
 
 	<div class="content"<?php print $content_attributes; ?>>
 
-		<div class="image-highlighted">
-			
-			<img src="<?php print image_style_url('1920x506', $node->field_image['und'][0]['uri']); ?>"/>
+		<div class="image-highlighted" style="background-image: url(<?php print image_style_url('1920x506', $node->field_image['und'][0]['uri']); ?>)">
 	    
 	    </div>
 
@@ -18,7 +16,7 @@
 
 			    <div class="image-brand">
 					
-					<img src="<?php print file_create_url($node->field_marca_empreendimento['und'][0]['uri']); ?>"/>
+					<img class="img-responsive" src="<?php print file_create_url($node->field_marca_empreendimento['und'][0]['uri']); ?>"/>
 			    
 			    </div>
 
@@ -69,7 +67,11 @@
 
 			<?php endif;?>
 
-			<a class="download btn btn-default-blue" href="<?php print file_create_url($node->field_tabela_de_vendas['und'][0]['uri']);?>" target="_blank">Baixar Tabela de Vendas</a>
+			<div class="link">
+			
+				<a class="download btn btn-default-blue" href="<?php print file_create_url($node->field_tabela_de_vendas['und'][0]['uri']);?>" target="_blank">Baixar Tabela de Vendas</a>
+
+			</div>
 
 		</div>
 

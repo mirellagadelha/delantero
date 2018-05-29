@@ -2,7 +2,7 @@
     
     $(function () {
 
-        $("#webform-client-form-8 .webform-submit").removeClass("btn-default").addClass("btn-default-blue");
+        $("#webform-client-form-8 .webform-submit, #webform-client-form-59 .webform-submit").removeClass("btn-default").addClass("btn-default-blue");
 
         $(".region-blockgroup-g-empreendimentos").addClass("container");
 
@@ -42,7 +42,9 @@
 
     $(document).ready(function() {
             
-        $('.tooltip-icon').tooltipster();
+        $('.tooltip-icon').tooltipster({
+   trigger: 'click'
+});
         
     });
 
