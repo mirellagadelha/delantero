@@ -1,23 +1,7 @@
-<div class="col-md-12">
-	
-	<div class="col-md-6 info">
+<div class="row interna-empreendimentos">
 
-		<div class="title"><?php print $row->node_title; ?></div>
+	<div class="icons-list">
 
-		<div class="image">
-				
-				<img src="<?php print image_style_url('311x243', $row->field_field_image[0]['raw']['uri']); ?>">
-
-		</div>
-
-		<div class="description"><?php print $row->field_body[0]['rendered']['#markup']; ?></div>
-
-		<a href="">Veja Mais</a>
-
-	</div>
-
-	<div class="col-md-6 icons">
-		
 		<?php if (isset($row->field_field_diferenciais)): ?>
 
 			<?php foreach ($row->field_field_diferenciais as $key => $item): ?>
@@ -48,7 +32,37 @@
 			<?php endforeach;?>
 
 		<?php endif;?>
-		
+
+	</div>
+
+	<div class="content-image">
+
+		<div class="image">
+
+			<a class="link-hover" href="">Ver Mais</a>
+
+			<img class="img-responsive" src="<?php print image_style_url('311x243', $row->field_field_image[0]['raw']['uri']); ?>">
+
+			<div class="tag"><?php print $row->field_field_tag[0]['rendered']['#title']; ?></div>
+
+		</div>
+
+
+
+		<div class="footer">
+
+			<div class="local">
+
+				<span>Local: <?php print $row->field_field_local[0]['rendered']['#markup']; ?></span>
+
+				<div class="title"><?php print $row->node_title;?></div>
+
+			</div>
+
+			<div class="tag"><?php print $row->field_field_tag[0]['rendered']['#title']; ?></div>
+
+		</div>
+
 	</div>
 
 </div>
