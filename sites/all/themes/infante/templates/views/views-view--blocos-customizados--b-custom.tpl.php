@@ -1,4 +1,4 @@
-<div class="row custom-blocks col-md-12">
+<div class="row custom-blocks">
 
 	<div class="first-block col-md-12">
 		

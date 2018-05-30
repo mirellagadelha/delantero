@@ -180,7 +180,11 @@
 				
 				<h1>LOCALIZAÇÃO</h1>
 
-				<a href="#">Abrir no Mapas</a>
+				<div class="link">
+
+					<a class="btn btn-default" href="#">Abrir no Mapas</a>
+
+				</div>
 
 			</div>
 
