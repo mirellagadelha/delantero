@@ -112,6 +112,17 @@ header{
 .css-block-superbanner {
 	position: relative;
 	.super-banner{
+		position: relative;
+		&:before{
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			background: rgba(41,64,82,.68);
+			width: 100%;
+			height: 100%;
+		}
 		height: 510px;
 		background-size: cover;
 		.container{
@@ -124,6 +135,7 @@ header{
 				margin: 0 auto;  
 				text-align: center;
 				width: 500px;
+				position: relative;
 				.title{
 					font-size: 35px;
 				}
@@ -368,6 +380,7 @@ header{
 		}
 	}
 	.views-row{
+		margin: 0 0 60px;
 		.interna-empreendimentos{
 			float: left;
 			margin: 0 30px 0 0 !important;
@@ -463,6 +476,7 @@ header{
 					margin: 0;
 					padding: 15px 20px;
 					border: none;
+					height: 100px;
 					.local{
 						font-size: 12px;
 						text-transform: uppercase;
@@ -480,8 +494,8 @@ header{
 }
 
 .css-b-emp-internas{
-    margin: 100px 0 60px;
-    display: inline-block;
+	margin: 100px 0 60px;
+	display: inline-block;
 }
 
 #block-views-blocos-customizados-b-custom{
@@ -734,6 +748,20 @@ header{
 				width: 100%;
 				height: 450px;
 			}
+			.vjs-big-play-button{
+				border-radius: 100%;
+				height: 90px;
+				width: 90px;
+				background: transparent;
+				border-width: 7px;
+				left: 50%;
+				margin-left: -45px;
+				top: 50%;
+				margin-top: -45px;
+				&:before{
+					position: relative;
+				}
+			}
 		}
 	}
 }
@@ -746,6 +774,12 @@ header{
 	.image-brand{
 		text-align: center;
 		img{ display: inline-block; }
+	}
+	.title-brand{
+		margin: 80px 0;
+		font-size: 34px;
+		text-align: center;
+		color: $dark-blue;
 	}
 	.description{
 		width: 560px;
@@ -786,6 +820,9 @@ header{
 			margin: 40px auto;
 			display: inline-block;
 		}
+	}
+	.first-section{
+		margin: 0 auto 40px;
 	}
 	.second-section{
 		h2{
@@ -892,7 +929,7 @@ header{
 			bottom: 0;
 			i{
 				color: #fff;
-				top: 195px;
+				top: 55px;
 				position: absolute;
 				font-size: 50px;
 				left: 0;
@@ -903,20 +940,24 @@ header{
 				font-size: 32px;
 				color: #fff;
 				position: absolute;
-				top: 240px;
+				top: 110px;
 				left: 0;
 				right: 0;
 			}
-			a{
-				padding: 12px 35px;
-				border: 1px solid $main-blue;
-				color: white;
-				text-transform: uppercase;
-				font-family: $font-sourcerbold;
+			.link{
+				text-align: center;
 				position: absolute;
-				top: 280px;
+				top: 190px;
 				left: 0;
 				right: 0;
+				a{
+					background: transparent;
+					padding: 12px 35px;
+					border: 1px solid $main-blue;
+					color: white;
+					text-transform: uppercase;
+					font-family: $font-sourcerbold;
+				}
 			}
 		}
 	}

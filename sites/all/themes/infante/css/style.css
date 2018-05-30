@@ -148,8 +148,20 @@ header .navbar-header .logo {
 }
 
 .css-block-superbanner .super-banner {
+  position: relative;
   height: 510px;
   background-size: cover;
+}
+
+.css-block-superbanner .super-banner:before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(41, 64, 82, 0.68);
+  width: 100%;
+  height: 100%;
 }
 
 .css-block-superbanner .super-banner .container {
@@ -164,6 +176,7 @@ header .navbar-header .logo {
   margin: 0 auto;
   text-align: center;
   width: 500px;
+  position: relative;
 }
 
 .css-block-superbanner .super-banner .container .fields-banner .title {
@@ -441,6 +454,11 @@ header .navbar-header .logo {
   font-family: "SourceSansProBold", sans;
 }
 
+.css-block-empreendimentos .views-row,
+.css-b-emp-internas .views-row {
+  margin: 0 0 60px;
+}
+
 .css-block-empreendimentos .views-row .interna-empreendimentos,
 .css-b-emp-internas .views-row .interna-empreendimentos {
   float: left;
@@ -555,6 +573,7 @@ header .navbar-header .logo {
   margin: 0;
   padding: 15px 20px;
   border: none;
+  height: 100px;
 }
 
 .css-block-empreendimentos .views-row .interna-empreendimentos .content-image .footer .local,
@@ -845,6 +864,22 @@ header .navbar-header .logo {
   height: 450px;
 }
 
+.node-type-institucional .region-content .video .vjs-big-play-button {
+  border-radius: 100%;
+  height: 90px;
+  width: 90px;
+  background: transparent;
+  border-width: 7px;
+  left: 50%;
+  margin-left: -45px;
+  top: 50%;
+  margin-top: -45px;
+}
+
+.node-type-institucional .region-content .video .vjs-big-play-button:before {
+  position: relative;
+}
+
 .node-type-empreendimentos .image-highlighted {
   height: 360px;
 }
@@ -855,6 +890,13 @@ header .navbar-header .logo {
 
 .node-type-empreendimentos .image-brand img {
   display: inline-block;
+}
+
+.node-type-empreendimentos .title-brand {
+  margin: 80px 0;
+  font-size: 34px;
+  text-align: center;
+  color: #294052;
 }
 
 .node-type-empreendimentos .description {
@@ -902,6 +944,10 @@ header .navbar-header .logo {
 .node-type-empreendimentos .link .download {
   margin: 40px auto;
   display: inline-block;
+}
+
+.node-type-empreendimentos .first-section {
+  margin: 0 auto 40px;
 }
 
 .node-type-empreendimentos .second-section h2 {
@@ -1031,7 +1077,7 @@ header .navbar-header .logo {
 
 .node-type-empreendimentos .location .location-fields i {
   color: #fff;
-  top: 195px;
+  top: 55px;
   position: absolute;
   font-size: 50px;
   left: 0;
@@ -1043,21 +1089,26 @@ header .navbar-header .logo {
   font-size: 32px;
   color: #fff;
   position: absolute;
-  top: 240px;
+  top: 110px;
   left: 0;
   right: 0;
 }
 
-.node-type-empreendimentos .location .location-fields a {
+.node-type-empreendimentos .location .location-fields .link {
+  text-align: center;
+  position: absolute;
+  top: 190px;
+  left: 0;
+  right: 0;
+}
+
+.node-type-empreendimentos .location .location-fields .link a {
+  background: transparent;
   padding: 12px 35px;
   border: 1px solid #00aecc;
   color: white;
   text-transform: uppercase;
   font-family: "SourceSansProBold", sans;
-  position: absolute;
-  top: 280px;
-  left: 0;
-  right: 0;
 }
 
 .node-type-empreendimentos footer {
