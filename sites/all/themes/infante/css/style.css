@@ -441,6 +441,141 @@ header .navbar-header .logo {
   font-family: "SourceSansProBold", sans;
 }
 
+.css-block-empreendimentos .views-row .interna-empreendimentos,
+.css-b-emp-internas .views-row .interna-empreendimentos {
+  float: left;
+  margin: 0 30px 0 0 !important;
+  position: relative;
+}
+
+.css-block-empreendimentos .views-row .interna-empreendimentos .icons-list,
+.css-b-emp-internas .views-row .interna-empreendimentos .icons-list {
+  position: absolute;
+  top: -30px;
+  left: 10px;
+  z-index: 2;
+}
+
+.css-block-empreendimentos .views-row .interna-empreendimentos .icons-list .title-icon,
+.css-b-emp-internas .views-row .interna-empreendimentos .icons-list .title-icon {
+  position: relative;
+  display: inline-block;
+}
+
+.css-block-empreendimentos .views-row .interna-empreendimentos .icons-list .title-icon i,
+.css-b-emp-internas .views-row .interna-empreendimentos .icons-list .title-icon i {
+  color: white;
+  background: #00aecc;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  padding: 14px;
+  font-size: 18px;
+}
+
+.css-block-empreendimentos .views-row .interna-empreendimentos .icons-list .title-icon .subtitle,
+.css-b-emp-internas .views-row .interna-empreendimentos .icons-list .title-icon .subtitle {
+  visibility: hidden;
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  z-index: 1000;
+  width: 200px;
+  display: none;
+}
+
+.css-block-empreendimentos .views-row .interna-empreendimentos .icons-list .title-icon:hover .subtitle,
+.css-b-emp-internas .views-row .interna-empreendimentos .icons-list .title-icon:hover .subtitle {
+  visibility: visible;
+  background: white;
+  padding: 10px;
+}
+
+.css-block-empreendimentos .views-row .interna-empreendimentos .content-image,
+.css-b-emp-internas .views-row .interna-empreendimentos .content-image {
+  -webkit-box-shadow: 0px 3px 23px 0px #c9c9c9;
+  -moz-box-shadow: 0px 3px 23px 0px #c9c9c9;
+  box-shadow: 0px 3px 23px 0px #c9c9c9;
+  border-radius: 0 0 10px 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.css-block-empreendimentos .views-row .interna-empreendimentos .content-image .tag,
+.css-b-emp-internas .views-row .interna-empreendimentos .content-image .tag {
+  background-color: #00aecc;
+  color: #fff;
+  font-family: "SourceSansProBold", sans;
+  padding: 10px 70px;
+  position: absolute;
+  right: -90px;
+  text-align: center;
+  text-transform: uppercase;
+  transform: rotate(35deg);
+  top: 20px;
+  width: 290px;
+  letter-spacing: 1px;
+}
+
+.css-block-empreendimentos .views-row .interna-empreendimentos .content-image .image a,
+.css-b-emp-internas .views-row .interna-empreendimentos .content-image .image a {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  bottom: 0;
+  padding: 99px 0;
+  background: rgba(0, 0, 0, 0.5);
+  height: 220px;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.css-block-empreendimentos .views-row .interna-empreendimentos .content-image .image a:after,
+.css-b-emp-internas .views-row .interna-empreendimentos .content-image .image a:after {
+  margin: 0 0 0 8px;
+  content: "\f061";
+  font-family: FontAwesome;
+}
+
+.css-block-empreendimentos .views-row .interna-empreendimentos .content-image .image:hover a,
+.css-b-emp-internas .views-row .interna-empreendimentos .content-image .image:hover a {
+  opacity: 1;
+}
+
+.css-block-empreendimentos .views-row .interna-empreendimentos .content-image .footer,
+.css-b-emp-internas .views-row .interna-empreendimentos .content-image .footer {
+  margin: 0;
+  padding: 15px 20px;
+  border: none;
+}
+
+.css-block-empreendimentos .views-row .interna-empreendimentos .content-image .footer .local,
+.css-b-emp-internas .views-row .interna-empreendimentos .content-image .footer .local {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.css-block-empreendimentos .views-row .interna-empreendimentos .content-image .footer .title,
+.css-b-emp-internas .views-row .interna-empreendimentos .content-image .footer .title {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #294052;
+  font-family: "SourceSansProBold", sans;
+}
+
+.css-b-emp-internas {
+  margin: 100px 0 60px;
+  display: inline-block;
+}
+
 #block-views-blocos-customizados-b-custom .first-block, #block-views-blocos-customizados-b-custom .second-block {
   padding: 0;
   height: 480px;
@@ -1021,7 +1156,7 @@ footer .whats-phone .info .text {
     border: 0;
     position: absolute;
     top: 40px;
-    right: 20px;
+    right: 0px;
   }
   header .navbar-header .navbar-toggle:focus {
     background: transparent;
@@ -1030,6 +1165,30 @@ footer .whats-phone .info .text {
     height: 3px;
     width: 24px;
     background-color: #294052;
+  }
+  header .navbar-collapse {
+    padding: 0 20px !important;
+    background: #fff;
+    text-align: center;
+    border: 0;
+    border-bottom: 3px solid #d1d1d1;
+    z-index: 10;
+    position: relative;
+  }
+  header .navbar-collapse #block-block-1 {
+    margin: 0;
+    margin: 20px 0 0;
+    text-align: center;
+  }
+  header .navbar-collapse #block-block-1 .btn {
+    margin: 0 0 20px;
+  }
+  header .navbar-collapse .block-menu {
+    margin: 20px auto;
+    width: 100%;
+  }
+  header .navbar-collapse .block-menu ul.menu.nav li {
+    display: block;
   }
   .css-block-superbanner .owl-buttons {
     display: none;
@@ -1160,6 +1319,17 @@ footer .whats-phone .info .text {
   }
   .node-type-empreendimentos .second-section .form-interest .webform-client-form .webform-component--preencha-dados {
     text-align: center;
+  }
+  .css-b-emp-internas {
+    display: inherit;
+  }
+  .css-b-emp-internas .views-row {
+    margin: 0 0 100px;
+  }
+  .css-b-emp-internas .views-row .interna-empreendimentos {
+    float: inherit;
+    margin: 0 auto !important;
+    width: 310px;
   }
   footer #block-views-rodape-block {
     text-align: center;
