@@ -893,6 +893,12 @@ header{
 					font-size: 18px;
 				}
 			}
+			&.form-individual{
+				padding: 0;
+				margin: 50px auto;
+				width: 600px;
+				float: inherit;
+			}
 		}
 		.download-folder{
 			padding: 0;

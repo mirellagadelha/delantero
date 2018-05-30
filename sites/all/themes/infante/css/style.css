@@ -1034,6 +1034,13 @@ header .navbar-header .logo {
   font-size: 18px;
 }
 
+.node-type-empreendimentos .second-section .form-interest.form-individual {
+  padding: 0;
+  margin: 50px auto;
+  width: 600px;
+  float: inherit;
+}
+
 .node-type-empreendimentos .second-section .download-folder {
   padding: 0;
 }
