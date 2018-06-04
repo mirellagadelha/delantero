@@ -262,6 +262,7 @@ header .navbar-header .logo {
 #block-block-2 .list-empreendimentos .subtitle {
   font-size: 18px;
   margin: 15px 0;
+  color: #656565;
 }
 
 #block-block-2 .list-empreendimentos span {
@@ -343,6 +344,7 @@ header .navbar-header .logo {
 .css-b-emp-internas .owl-item .carousel-empreendimentos .icons-list .title-icon {
   position: relative;
   display: inline-block;
+  text-align: center;
 }
 
 .css-block-empreendimentos .owl-item .carousel-empreendimentos .icons-list .title-icon i,
@@ -478,6 +480,7 @@ header .navbar-header .logo {
 .css-b-emp-internas .views-row .interna-empreendimentos .icons-list .title-icon {
   position: relative;
   display: inline-block;
+  text-align: center;
 }
 
 .css-block-empreendimentos .views-row .interna-empreendimentos .icons-list .title-icon i,
@@ -625,6 +628,7 @@ header .navbar-header .logo {
 #block-views-blocos-customizados-b-custom .about-infante .text {
   font-size: 18px;
   margin: 20px 0;
+  color: #656565;
 }
 
 #block-views-blocos-customizados-b-custom .about-infante .link:after {
@@ -651,6 +655,7 @@ header .navbar-header .logo {
 
 #block-views-blocos-customizados-b-custom .second-block .news-infante .news-fields .text {
   font-size: 18px;
+  color: #656565;
 }
 
 #block-views-blocos-customizados-b-custom .second-block .news-form {
@@ -745,6 +750,17 @@ header .navbar-header .logo {
 .webform-client-form.webform-client-form-65 {
   width: 750px;
   margin: 60px auto !important;
+}
+
+.webform-client-form.webform-client-form-59 {
+  position: relative;
+  overflow: hidden;
+}
+
+.webform-client-form.webform-client-form-59 .form-actions {
+  position: absolute;
+  bottom: 10px;
+  right: 240px;
 }
 
 #block-webform-client-block-59 {
@@ -848,6 +864,7 @@ header .navbar-header .logo {
 .node-type-institucional .region-content .body {
   font-size: 18px;
   line-height: 150%;
+  color: #656565;
 }
 
 .node-type-institucional .region-content .body p {
@@ -1140,14 +1157,16 @@ header .navbar-header .logo {
 
 .node-type-webform .webform-client-form {
   margin: 60px 0;
+  position: relative;
+  overflow: hidden;
 }
 
 footer {
   border: 0 !important;
   background-color: #cfe4ec;
   color: #656565;
-  padding: 30px 0 0 !important;
-  margin: 30px 0 0 !important;
+  padding: 30px 0 20px !important;
+  margin: 30px 0 80px !important;
 }
 
 footer .info-infante {
@@ -1180,6 +1199,9 @@ footer .whats-phone {
   text-align: center;
   text-transform: uppercase;
   font-family: "SourceSansProBold", sans;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 footer .whats-phone i, footer .whats-phone .info, footer .whats-phone .text, footer .whats-phone .phone {
@@ -1219,7 +1241,7 @@ footer .whats-phone .info .text {
   border-bottom-color: #ddd;
 }
 
-.not-logged-in.page-user #user-login label {
+.not-logged-in.page-user #user-login .control-label, .not-logged-in.page-user #user-pass .control-label {
   font-weight: normal;
 }
 

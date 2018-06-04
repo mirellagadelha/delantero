@@ -223,6 +223,7 @@ header{
 		.subtitle{
 			font-size: 18px;
 			margin: 15px 0;
+			color: $main-gray;
 		}
 		span{
 			color: $main-gray;
@@ -282,6 +283,7 @@ header{
 				.title-icon{
 					position: relative;
 					display: inline-block;
+					text-align: center;
 					i{
 						color: white;
 						background: $main-blue;
@@ -393,6 +395,7 @@ header{
 				.title-icon{
 					position: relative;
 					display: inline-block;
+					text-align: center;
 					i{
 						color: white;
 						background: $main-blue;
@@ -523,6 +526,7 @@ header{
 		.text{
 			font-size: 18px;
 			margin: 20px 0;
+			color: $main-gray;
 		}
 		.link{
 			&:after{
@@ -546,6 +550,7 @@ header{
 				}
 				.text{
 					font-size: 18px;
+					color: $main-gray;
 				}
 			}
 		}
@@ -642,6 +647,15 @@ header{
 		width: 750px;
 		margin: 60px auto !important;
 	}
+	&.webform-client-form-59{
+		position: relative;
+		overflow: hidden;
+		.form-actions{
+			position: absolute;
+			bottom: 10px;
+			right: 240px;
+		}
+	}
 }
 
 #block-webform-client-block-59{
@@ -735,6 +749,7 @@ header{
 		.body{
 			font-size: 18px;
 			line-height: 150%;
+			color: $main-gray;
 			p{
 				margin: 0 0 30px;
 			}
@@ -988,6 +1003,8 @@ header{
 	}
 	.webform-client-form{
 		margin: 60px 0;
+		position: relative;
+		overflow: hidden;
 	}
 }
 
@@ -995,8 +1012,8 @@ footer{
 	border: 0 !important;
 	background-color: $footer;
 	color: $main-gray;
-	padding: 30px 0 0 !important;
-	margin: 30px 0 0 !important;
+	padding: 30px 0 20px !important;
+	margin: 30px 0 80px !important;
 	.info-infante{
 		margin: 20px 0 0;
 		.first{
@@ -1024,6 +1041,9 @@ footer{
 		text-align: center;
 		text-transform: uppercase;
 		font-family: $font-sourcerbold;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
 		i, .info, .text, .phone{
 			display: inline-block;
 			font-size: 18px;
@@ -1065,8 +1085,8 @@ footer{
 				}
 			}
 		}
-		#user-login{
-			label{
+		#user-login, #user-pass{
+			.control-label{
 				font-weight: normal;
 			}
 		}
