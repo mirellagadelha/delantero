@@ -153,18 +153,6 @@ header .navbar-header .logo {
   background-size: cover;
 }
 
-.css-block-superbanner .super-banner:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: rgba(41, 64, 82, 0.68);
-  width: 100%;
-  height: 100%;
-}
-
 .css-block-superbanner .super-banner .container {
   height: 510px;
   align-items: center;
@@ -941,6 +929,7 @@ header .navbar-header .logo {
 
 .node-type-empreendimentos .image-brand {
   text-align: center;
+  margin: 60px 0 0;
 }
 
 .node-type-empreendimentos .image-brand img {
@@ -970,9 +959,11 @@ header .navbar-header .logo {
 
 .node-type-empreendimentos .icons-list .title-icon {
   margin: 0 0 20px;
+  align-items: center;
+  display: flex;
 }
 
-.node-type-empreendimentos .icons-list .title-icon i {
+.node-type-empreendimentos .icons-list .title-icon .icon i {
   width: 60px;
   height: 60px;
   float: left;
@@ -989,7 +980,7 @@ header .navbar-header .logo {
 .node-type-empreendimentos .icons-list .title-icon .subtitle {
   display: inline-block;
   font-size: 18px;
-  margin: 16px 0 0;
+  margin: 0;
 }
 
 .node-type-empreendimentos .link {
@@ -1081,10 +1072,6 @@ header .navbar-header .logo {
   text-align: left;
 }
 
-.node-type-empreendimentos .second-section .form-interest .webform-client-form {
-  padding: 0 140px 0 0;
-}
-
 .node-type-empreendimentos .second-section .form-interest .webform-client-form .webform-component--preencha-dados {
   font-size: 18px;
 }
@@ -1174,7 +1161,7 @@ header .navbar-header .logo {
 }
 
 .node-type-empreendimentos footer {
-  margin: 0 !important;
+  margin: 0 0 80px !important;
 }
 
 .node-type-webform .sale {
@@ -1292,7 +1279,13 @@ footer .whats-phone .info .text {
 ##Device = Most of the Smartphones Mobiles (Portrait)
 ##Screen = B/w 320px to 479px
 */
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 620px) {
+  html {
+    overflow-x: hidden;
+  }
+  body {
+    overflow-x: inherit;
+  }
   header .navbar-header .logo {
     margin: 40px 0 0 40px;
     width: 280px;
@@ -1400,6 +1393,7 @@ footer .whats-phone .info .text {
   #block-webform-client-block-59 .webform-client-form .form-actions {
     text-align: center;
     margin: 20px 0 0;
+    right: 15px;
   }
   .css-block-empreendimentos .owl-carousel .owl-buttons {
     position: absolute;
