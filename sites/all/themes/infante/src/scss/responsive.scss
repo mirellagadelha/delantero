@@ -25,38 +25,48 @@
 		}
 		.navbar-collapse{
 			padding: 0 20px !important;
-    		background: #fff;
-    		text-align: center;
-    		border: 0;
-    		border-bottom: 3px solid $light-gray;
-    		z-index: 10;
-    		position: relative;
-    		#block-block-1{
-    			margin: 0;
-    			margin: 20px 0 0;
-    			text-align: center;
-    			.btn{
-    				margin: 0 0 20px;
-    			}
-    		}
-    		.block-menu{
-    			margin: 20px auto;
-    			width: 100%;
-	    		ul.menu.nav{
-		    		li{
-		    			display: block;
-		    		}
-	    		}
-    		}
+			background: #fff;
+			text-align: center;
+			border: 0;
+			border-bottom: 3px solid $light-gray;
+			z-index: 10;
+			position: relative;
+			#block-block-1{
+				margin: 0;
+				margin: 20px 0 0;
+				text-align: center;
+				.btn{
+					margin: 0 0 20px;
+				}
+			}
+			.block-menu{
+				margin: 20px auto;
+				width: 100%;
+				ul.menu.nav{
+					li{
+						display: block;
+					}
+				}
+			}
 		}
 	}
 	.css-block-superbanner{
 		.owl-buttons{ display: none; }
+		.subtitle{
+			padding: 0 30px;
+		}
 	}
 	.css-block-bannerinterna {
 		.super-banner{
 			height: 260px;
 			font-size: 25px;
+			&:before{
+				height: 260px;
+			}
+			.fields-banner{
+				z-index: 10;
+				position: relative;
+			}
 			.subtitle{
 				padding: 0 20px;
 			}
@@ -76,6 +86,9 @@
 	#block-views-blocos-customizados-b-custom{
 		.first-block, .second-block{
 			height: inherit;
+			.left-image{
+				height: inherit;
+			}
 		}
 		.second-block{
 			.news-infante, .news-form{
@@ -91,7 +104,7 @@
 				}
 			}
 			.news-form{
-				padding: 60px 10px;
+				padding: 60px 30px;
 				.webform-client-form .form-radios .form-item {
 					display: inline-block;
 					margin: 0 20px 0 0;
@@ -170,6 +183,11 @@
 				margin: 40px auto !important;
 				padding: 0 10px;
 			}
+			&.webform-client-form-59{
+				.form-actions{
+					right: 15px;
+				}
+			}
 		}
 		.webform-component--indentifique-se {
 			margin: 0 0 20px;
@@ -201,7 +219,8 @@
 				}
 			}
 			.form-interest{
-				padding: 30px 10px;
+				padding: 30px 10px !important;
+				width: inherit !important;
 				h2{
 					text-align: center;
 				}
@@ -221,8 +240,8 @@
 			margin: 0 0 100px;
 			.interna-empreendimentos {
 				float: inherit;
-    			margin: 0 auto !important;
-    			width: 310px;
+				margin: 0 auto !important;
+				width: 310px;
 			}
 		}
 	}
@@ -247,5 +266,8 @@
 ##Screen = B/w 768px to 1024px
 */
 @media (min-width: 768px) and (max-width: 1024px) {
-
+	.css-block-bannerinterna .super-banner{
+		width: 100%;
+		margin: 0;
+	}
 }

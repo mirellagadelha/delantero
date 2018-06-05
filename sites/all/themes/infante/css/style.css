@@ -198,6 +198,22 @@ header .navbar-header .logo {
   display: flex;
   font-family: "SourceSansProBold", sans;
   text-transform: uppercase;
+  position: relative;
+}
+
+.css-block-bannerinterna .super-banner:before {
+  content: "";
+  background: rgba(41, 64, 82, 0.8);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 370px;
+}
+
+.css-block-bannerinterna .super-banner .fields-banner {
+  z-index: 10;
+  position: relative;
 }
 
 .owl-pagination {
@@ -675,6 +691,7 @@ header .navbar-header .logo {
 #block-views-blocos-customizados-b-custom .second-block .news-form .webform-client-form .control-label {
   margin: 0 0 5px 20px;
   text-transform: uppercase;
+  color: white;
 }
 
 #block-views-blocos-customizados-b-custom .second-block .news-form .webform-client-form .form-radios .control-label {
@@ -682,7 +699,7 @@ header .navbar-header .logo {
   padding: 10px 35px;
   border: 1px solid #7195ac;
   border-radius: 50px;
-  color: #7195ac;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 #block-views-blocos-customizados-b-custom .second-block .news-form .webform-client-form .form-radios .control-label.active {
@@ -705,6 +722,26 @@ header .navbar-header .logo {
   background-color: transparent;
   border-radius: 60px;
   color: white;
+}
+
+#block-views-blocos-customizados-b-custom .second-block .news-form .webform-client-form input.placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+#block-views-blocos-customizados-b-custom .second-block .news-form .webform-client-form input:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+#block-views-blocos-customizados-b-custom .second-block .news-form .webform-client-form input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+#block-views-blocos-customizados-b-custom .second-block .news-form .webform-client-form input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+#block-views-blocos-customizados-b-custom .second-block .webform-component--indentifique-se {
+  margin: 0 0 15px;
 }
 
 #block-views-blocos-customizados-b-custom .second-block .webform-component--indentifique-se .form-item-submitted-indentifique-se label:after {
@@ -784,7 +821,7 @@ header .navbar-header .logo {
 }
 
 .webform-component--indentifique-se {
-  margin: 0;
+  margin: 0 0 15px;
 }
 
 .webform-component--indentifique-se .control-label {
@@ -1202,6 +1239,7 @@ footer .whats-phone {
   position: fixed;
   bottom: 0;
   width: 100%;
+  z-index: 100;
 }
 
 footer .whats-phone i, footer .whats-phone .info, footer .whats-phone .text, footer .whats-phone .phone {
@@ -1296,9 +1334,19 @@ footer .whats-phone .info .text {
   .css-block-superbanner .owl-buttons {
     display: none;
   }
+  .css-block-superbanner .subtitle {
+    padding: 0 30px;
+  }
   .css-block-bannerinterna .super-banner {
     height: 260px;
     font-size: 25px;
+  }
+  .css-block-bannerinterna .super-banner:before {
+    height: 260px;
+  }
+  .css-block-bannerinterna .super-banner .fields-banner {
+    z-index: 10;
+    position: relative;
   }
   .css-block-bannerinterna .super-banner .subtitle {
     padding: 0 20px;
@@ -1313,6 +1361,9 @@ footer .whats-phone .info .text {
   #block-views-blocos-customizados-b-custom .first-block, #block-views-blocos-customizados-b-custom .second-block {
     height: inherit;
   }
+  #block-views-blocos-customizados-b-custom .first-block .left-image, #block-views-blocos-customizados-b-custom .second-block .left-image {
+    height: inherit;
+  }
   #block-views-blocos-customizados-b-custom .second-block .news-infante, #block-views-blocos-customizados-b-custom .second-block .news-form {
     height: auto;
     overflow: hidden;
@@ -1324,7 +1375,7 @@ footer .whats-phone .info .text {
     text-align: center;
   }
   #block-views-blocos-customizados-b-custom .second-block .news-form {
-    padding: 60px 10px;
+    padding: 60px 30px;
   }
   #block-views-blocos-customizados-b-custom .second-block .news-form .webform-client-form .form-radios .form-item {
     display: inline-block;
@@ -1387,6 +1438,9 @@ footer .whats-phone .info .text {
     margin: 40px auto !important;
     padding: 0 10px;
   }
+  .node-type-webform .webform-client-form.webform-client-form-59 .form-actions {
+    right: 15px;
+  }
   .node-type-webform .webform-component--indentifique-se {
     margin: 0 0 20px;
   }
@@ -1412,7 +1466,8 @@ footer .whats-phone .info .text {
     padding: 0 20px;
   }
   .node-type-empreendimentos .second-section .form-interest {
-    padding: 30px 10px;
+    padding: 30px 10px !important;
+    width: inherit !important;
   }
   .node-type-empreendimentos .second-section .form-interest h2 {
     text-align: center;
@@ -1452,3 +1507,9 @@ footer .whats-phone .info .text {
 ##Device = Tablets, Ipads (portrait)
 ##Screen = B/w 768px to 1024px
 */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .css-block-bannerinterna .super-banner {
+    width: 100%;
+    margin: 0;
+  }
+}

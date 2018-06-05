@@ -158,6 +158,20 @@ header{
 		display: flex;
 		font-family: $font-sourcerbold;
 		text-transform: uppercase;
+		position: relative;
+		&:before{
+			content: "";
+			background: rgba(41,64,82,.8);
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 370px;
+		}
+		.fields-banner{
+			z-index: 10;
+			position: relative;
+		}
 	}
 }
 
@@ -567,6 +581,7 @@ header{
 				.control-label{
 					margin: 0 0 5px 20px;
 					text-transform: uppercase;
+					color: white;
 				}
 				.form-radios{
 					.control-label{
@@ -574,7 +589,7 @@ header{
 						padding: 10px 35px;
 						border: 1px solid $border-blue;
 						border-radius: 50px;
-						color: $border-blue;
+						color: rgba(255,255,255,.3);
 						&.active{
 							border-color: $main-blue;
 							background-color: $main-blue;
@@ -594,10 +609,15 @@ header{
 					background-color: transparent;
 					border-radius: 60px;
 					color: white;
+					&.placeholder { color:rgba(255,255,255,.3); }
+					&:-moz-placeholder { color: rgba(255,255,255,.3); }
+					&::-webkit-input-placeholder { color: rgba(255,255,255,.3); }
+					&:-ms-input-placeholder{ color: rgba(255,255,255,.3); }
 				}
 			}
 		}
 		.webform-component--indentifique-se {
+			margin: 0 0 15px;
 			.form-item-submitted-indentifique-se{
 				label:after{
 					content: "\f1ce";
@@ -676,7 +696,7 @@ header{
 }
 
 .webform-component--indentifique-se {
-	margin: 0;
+	margin: 0 0 15px;
 	.control-label{
 		margin: 0 0 5px 20px;
 		text-transform: uppercase;
@@ -1044,6 +1064,7 @@ footer{
 		position: fixed;
 		bottom: 0;
 		width: 100%;
+		z-index: 100;
 		i, .info, .text, .phone{
 			display: inline-block;
 			font-size: 18px;
