@@ -154,6 +154,7 @@ header .navbar-header .logo {
 }
 
 .css-block-superbanner .super-banner:before {
+  content: "";
   position: absolute;
   left: 0;
   right: 0;
@@ -821,7 +822,7 @@ header .navbar-header .logo {
 }
 
 .webform-component--indentifique-se {
-  margin: 0 0 15px;
+  margin: 0;
 }
 
 .webform-component--indentifique-se .control-label {
@@ -1196,6 +1197,10 @@ header .navbar-header .logo {
   margin: 60px 0;
   position: relative;
   overflow: hidden;
+}
+
+.node-type-webform .webform-component--indentifique-se {
+  margin: 0;
 }
 
 footer {

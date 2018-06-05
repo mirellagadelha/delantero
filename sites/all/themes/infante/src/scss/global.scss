@@ -114,6 +114,7 @@ header{
 	.super-banner{
 		position: relative;
 		&:before{
+			content: "";
 			position: absolute;
 			left: 0;
 			right: 0;
@@ -696,7 +697,7 @@ header{
 }
 
 .webform-component--indentifique-se {
-	margin: 0 0 15px;
+	margin: 0;
 	.control-label{
 		margin: 0 0 5px 20px;
 		text-transform: uppercase;
@@ -1025,6 +1026,9 @@ header{
 		margin: 60px 0;
 		position: relative;
 		overflow: hidden;
+	}
+	.webform-component--indentifique-se {
+		margin: 0;
 	}
 }
 
