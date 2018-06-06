@@ -316,12 +316,10 @@ header{
 				}
 			}
 			.content-image{
-				-webkit-box-shadow: 0px 3px 23px 0px rgba(201,201,201,1);
-				-moz-box-shadow: 0px 3px 23px 0px rgba(201,201,201,1);
-				box-shadow: 0px 3px 23px 0px rgba(201,201,201,1);
 				border-radius: 0 0 10px 10px;
 				position: relative;
 				overflow: hidden;
+				border: 1px solid #e6e6e6;
 				.tag{
 					background-color: $main-blue;
 					color: #fff;
@@ -364,6 +362,7 @@ header{
 					&:hover{
 						a{
 							opacity: 1;
+							height:216px;
 						}
 					}
 				}
@@ -428,9 +427,7 @@ header{
 				}
 			}
 			.content-image{
-				-webkit-box-shadow: 0px 3px 23px 0px rgba(201,201,201,1);
-				-moz-box-shadow: 0px 3px 23px 0px rgba(201,201,201,1);
-				box-shadow: 0px 3px 23px 0px rgba(201,201,201,1);
+				border: 1px solid #e6e6e6;
 				border-radius: 0 0 10px 10px;
 				position: relative;
 				overflow: hidden;
@@ -476,6 +473,7 @@ header{
 					&:hover{
 						a{
 							opacity: 1;
+							height: 244px;
 						}
 					}
 				}
@@ -910,26 +908,6 @@ header{
 				}
 			}
 		}
-		.form-interest{
-			padding: 45px 0;
-			h2{
-				margin: 0 0 20px;
-				font-size: 34px;
-				color: $dark-blue;
-				text-align: left;
-			}
-			.webform-client-form{
-				.webform-component--preencha-dados{
-					font-size: 18px;
-				}
-			}
-			&.form-individual{
-				padding: 0;
-				margin: 50px auto;
-				width: 600px;
-				float: inherit;
-			}
-		}
 		.download-folder{
 			padding: 0;
 			.folder{
@@ -946,6 +924,38 @@ header{
 						content: "\f063";
 						font-family :FontAwesome;
 					}
+				}
+			}
+		}
+	}
+	.form-interest{
+		padding: 45px 0;
+		background: #f0f0f0;
+		h2{
+			margin: 0 0 20px;
+			font-size: 34px;
+			color: $dark-blue;
+			text-align: left;
+		}
+		.webform-client-form{
+			.webform-component--preencha-dados{
+				font-size: 18px;
+			}
+		}
+		&.form-individual{
+			.content{
+				padding: 0;
+				margin: 50px auto;
+				width: 600px;
+				float: inherit;
+			}
+			.btn{
+				background: $main-blue;
+				color: white;
+				&:hover{
+					border-color: $light-blue;
+					background: $light-blue;
+					color: $dark-blue;
 				}
 			}
 		}

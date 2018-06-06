@@ -383,12 +383,10 @@ header .navbar-header .logo {
 
 .css-block-empreendimentos .owl-item .carousel-empreendimentos .content-image,
 .css-b-emp-internas .owl-item .carousel-empreendimentos .content-image {
-  -webkit-box-shadow: 0px 3px 23px 0px #c9c9c9;
-  -moz-box-shadow: 0px 3px 23px 0px #c9c9c9;
-  box-shadow: 0px 3px 23px 0px #c9c9c9;
   border-radius: 0 0 10px 10px;
   position: relative;
   overflow: hidden;
+  border: 1px solid #e6e6e6;
 }
 
 .css-block-empreendimentos .owl-item .carousel-empreendimentos .content-image .tag,
@@ -438,6 +436,7 @@ header .navbar-header .logo {
 .css-block-empreendimentos .owl-item .carousel-empreendimentos .content-image .image:hover a,
 .css-b-emp-internas .owl-item .carousel-empreendimentos .content-image .image:hover a {
   opacity: 1;
+  height: 216px;
 }
 
 .css-block-empreendimentos .owl-item .carousel-empreendimentos .content-image .footer,
@@ -519,9 +518,7 @@ header .navbar-header .logo {
 
 .css-block-empreendimentos .views-row .interna-empreendimentos .content-image,
 .css-b-emp-internas .views-row .interna-empreendimentos .content-image {
-  -webkit-box-shadow: 0px 3px 23px 0px #c9c9c9;
-  -moz-box-shadow: 0px 3px 23px 0px #c9c9c9;
-  box-shadow: 0px 3px 23px 0px #c9c9c9;
+  border: 1px solid #e6e6e6;
   border-radius: 0 0 10px 10px;
   position: relative;
   overflow: hidden;
@@ -574,6 +571,7 @@ header .navbar-header .logo {
 .css-block-empreendimentos .views-row .interna-empreendimentos .content-image .image:hover a,
 .css-b-emp-internas .views-row .interna-empreendimentos .content-image .image:hover a {
   opacity: 1;
+  height: 244px;
 }
 
 .css-block-empreendimentos .views-row .interna-empreendimentos .content-image .footer,
@@ -1061,28 +1059,6 @@ header .navbar-header .logo {
   color: #00aecc;
 }
 
-.node-type-empreendimentos .second-section .form-interest {
-  padding: 45px 0;
-}
-
-.node-type-empreendimentos .second-section .form-interest h2 {
-  margin: 0 0 20px;
-  font-size: 34px;
-  color: #294052;
-  text-align: left;
-}
-
-.node-type-empreendimentos .second-section .form-interest .webform-client-form .webform-component--preencha-dados {
-  font-size: 18px;
-}
-
-.node-type-empreendimentos .second-section .form-interest.form-individual {
-  padding: 0;
-  margin: 50px auto;
-  width: 600px;
-  float: inherit;
-}
-
 .node-type-empreendimentos .second-section .download-folder {
   padding: 0;
 }
@@ -1104,6 +1080,40 @@ header .navbar-header .logo {
   margin: 0 0 0 8px;
   content: "\f063";
   font-family: FontAwesome;
+}
+
+.node-type-empreendimentos .form-interest {
+  padding: 45px 0;
+  background: #f0f0f0;
+}
+
+.node-type-empreendimentos .form-interest h2 {
+  margin: 0 0 20px;
+  font-size: 34px;
+  color: #294052;
+  text-align: left;
+}
+
+.node-type-empreendimentos .form-interest .webform-client-form .webform-component--preencha-dados {
+  font-size: 18px;
+}
+
+.node-type-empreendimentos .form-interest.form-individual .content {
+  padding: 0;
+  margin: 50px auto;
+  width: 600px;
+  float: inherit;
+}
+
+.node-type-empreendimentos .form-interest.form-individual .btn {
+  background: #00aecc;
+  color: white;
+}
+
+.node-type-empreendimentos .form-interest.form-individual .btn:hover {
+  border-color: #95c4d7;
+  background: #95c4d7;
+  color: #294052;
 }
 
 .node-type-empreendimentos .galeria {
