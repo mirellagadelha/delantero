@@ -34,11 +34,12 @@
 			z-index: 10;
 			position: relative;
 			#block-block-1{
-				margin: 0;
 				margin: 20px 0 0;
 				text-align: center;
-				.btn{
-					margin: 0 0 20px;
+				display: block;
+				width: 100%;
+				.button-contact{
+					display: inline-block;
 				}
 			}
 			.block-menu{
@@ -98,18 +99,23 @@
 				overflow: hidden;
 			}
 			.news-infante{
+				background-size: cover;
 				.news-fields{
 					float: inherit;
 					width: inherit;
 					margin: 40px 20px;
 					text-align: center;
+					.text{
+						background: rgba(255,255,255,.6);
+						padding: 15px;
+					}
 				}
 			}
 			.news-form{
 				padding: 60px 30px;
 				.webform-client-form .form-radios .form-item {
 					display: inline-block;
-					margin: 0 20px 0 0;
+					margin: 0 10px 0 0;
 				}
 			}
 		}
@@ -126,7 +132,7 @@
 				}
 				.form-item {
 					display: inline-block;
-					margin: 0 20px 20px 0;
+					margin: 0 10px 20px 0;
 				}
 			}
 			.form-actions{
@@ -211,6 +217,13 @@
 		.description{
 			width: inherit;
 		}
+		.icons-list{
+			.title-icon{
+				.subtitle{
+					width: 260px;
+				}
+			}
+		}
 		.second-section {
 			.gallery-tour {
 				height: 230px;
@@ -221,17 +234,22 @@
 					padding: 0 20px;
 				}
 			}
-			.form-interest{
-				padding: 30px 10px !important;
-				width: inherit !important;
-				h2{
+		}
+		.form-interest{
+			padding: 30px 10px !important;
+			width: inherit !important;
+			h2{
+				text-align: center;
+			}
+			.webform-client-form{
+				padding: 0;
+				.webform-component--preencha-dados{
 					text-align: center;
 				}
-				.webform-client-form{
-					padding: 0;
-					.webform-component--preencha-dados{
-						text-align: center;
-					}
+			}
+			&.form-individual{
+				.content{
+					width: inherit;
 				}
 			}
 		}
@@ -249,6 +267,7 @@
 		}
 	}
 	footer{
+		margin: 0 0 130px !important;
 		#block-views-rodape-block{
 			text-align: center;
 			img{

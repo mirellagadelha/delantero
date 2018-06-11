@@ -289,13 +289,13 @@ header .navbar-header .logo {
 .css-block-empreendimentos .owl-carousel .owl-wrapper-outer,
 .css-b-emp-internas .owl-carousel .owl-wrapper-outer {
   padding: 30px 0 0;
-  width: 642px;
+  /* width: 642px; */
 }
 
 .css-block-empreendimentos .owl-carousel .owl-buttons,
 .css-b-emp-internas .owl-carousel .owl-buttons {
   position: absolute;
-  right: 0;
+  right: -80px;
   top: 0;
 }
 
@@ -326,15 +326,17 @@ header .navbar-header .logo {
 
 .css-block-empreendimentos .owl-item,
 .css-b-emp-internas .owl-item {
-  width: 310px !important;
-  margin: 0 5px 10px 10px;
+  /* width: 310px !important;
+		margin: 0 5px 10px 10px; */
+  margin: 0;
 }
 
 .css-block-empreendimentos .owl-item .carousel-empreendimentos,
 .css-b-emp-internas .owl-item .carousel-empreendimentos {
   float: left;
-  margin: 0 30px 0 0 !important;
-  position: relative;
+  /* margin: 0 30px 0 0 !important;
+			position: relative; */
+  margin: 0;
 }
 
 .css-block-empreendimentos .owl-item .carousel-empreendimentos .icons-list,
@@ -534,8 +536,8 @@ header .navbar-header .logo {
   right: -90px;
   text-align: center;
   text-transform: uppercase;
-  transform: rotate(35deg);
-  top: 20px;
+  transform: rotate(40deg);
+  top: 28px;
   width: 290px;
   letter-spacing: 1px;
 }
@@ -642,6 +644,7 @@ header .navbar-header .logo {
 
 #block-views-blocos-customizados-b-custom .second-block .news-infante {
   height: 480px;
+  background-size: contain;
 }
 
 #block-views-blocos-customizados-b-custom .second-block .news-infante .news-fields {
@@ -654,6 +657,7 @@ header .navbar-header .logo {
   font-size: 35px;
   color: #294052;
   line-height: 40px;
+  margin: 0 0 30px;
 }
 
 #block-views-blocos-customizados-b-custom .second-block .news-infante .news-fields .text {
@@ -921,8 +925,28 @@ header .navbar-header .logo {
   position: relative;
 }
 
+.node-type-empreendimentos .image {
+  position: relative;
+  overflow: hidden;
+}
+
 .node-type-empreendimentos .image-highlighted {
   height: 360px;
+}
+
+.node-type-empreendimentos .tag {
+  background-color: #00aecc;
+  color: #fff;
+  font-family: "SourceSansProBold", sans;
+  padding: 10px 70px;
+  position: absolute;
+  right: -75px;
+  text-align: center;
+  text-transform: uppercase;
+  transform: rotate(40deg);
+  top: 30px;
+  width: 290px;
+  letter-spacing: 1px;
 }
 
 .node-type-empreendimentos .image-brand {
@@ -1101,7 +1125,7 @@ header .navbar-header .logo {
 .node-type-empreendimentos .form-interest.form-individual .content {
   padding: 0;
   margin: 50px auto;
-  width: 600px;
+  width: 555px;
   float: inherit;
 }
 
@@ -1247,15 +1271,23 @@ footer .whats-phone {
 footer .whats-phone i, footer .whats-phone .info, footer .whats-phone .text, footer .whats-phone .phone {
   display: inline-block;
   font-size: 18px;
+  color: #95c4d7;
 }
 
 footer .whats-phone i, footer .whats-phone .info {
   margin: 0 5px 0 0;
-  color: #00aecc;
 }
 
 footer .whats-phone .text, footer .whats-phone .phone {
   margin: 0 5px 0 0;
+}
+
+footer .whats-phone .phone a {
+  color: #95c4d7;
+}
+
+footer .whats-phone .phone a:hover {
+  color: white;
 }
 
 footer .whats-phone .info .text {
@@ -1325,12 +1357,13 @@ footer .whats-phone .info .text {
     position: relative;
   }
   header .navbar-collapse #block-block-1 {
-    margin: 0;
     margin: 20px 0 0;
     text-align: center;
+    display: block;
+    width: 100%;
   }
-  header .navbar-collapse #block-block-1 .btn {
-    margin: 0 0 20px;
+  header .navbar-collapse #block-block-1 .button-contact {
+    display: inline-block;
   }
   header .navbar-collapse .block-menu {
     margin: 20px auto;
@@ -1376,18 +1409,25 @@ footer .whats-phone .info .text {
     height: auto;
     overflow: hidden;
   }
+  #block-views-blocos-customizados-b-custom .second-block .news-infante {
+    background-size: cover;
+  }
   #block-views-blocos-customizados-b-custom .second-block .news-infante .news-fields {
     float: inherit;
     width: inherit;
     margin: 40px 20px;
     text-align: center;
   }
+  #block-views-blocos-customizados-b-custom .second-block .news-infante .news-fields .text {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 15px;
+  }
   #block-views-blocos-customizados-b-custom .second-block .news-form {
     padding: 60px 30px;
   }
   #block-views-blocos-customizados-b-custom .second-block .news-form .webform-client-form .form-radios .form-item {
     display: inline-block;
-    margin: 0 20px 0 0;
+    margin: 0 10px 0 0;
   }
   #block-webform-client-block-59 .sale {
     width: inherit;
@@ -1398,7 +1438,7 @@ footer .whats-phone .info .text {
   }
   #block-webform-client-block-59 .webform-client-form .form-radios .form-item {
     display: inline-block;
-    margin: 0 20px 20px 0;
+    margin: 0 10px 20px 0;
   }
   #block-webform-client-block-59 .webform-client-form .form-actions {
     text-align: center;
@@ -1465,6 +1505,9 @@ footer .whats-phone .info .text {
   .node-type-empreendimentos .description {
     width: inherit;
   }
+  .node-type-empreendimentos .icons-list .title-icon .subtitle {
+    width: 260px;
+  }
   .node-type-empreendimentos .second-section .gallery-tour {
     height: 230px;
   }
@@ -1474,18 +1517,21 @@ footer .whats-phone .info .text {
   .node-type-empreendimentos .second-section .list-tour .tour-fields {
     padding: 0 20px;
   }
-  .node-type-empreendimentos .second-section .form-interest {
+  .node-type-empreendimentos .form-interest {
     padding: 30px 10px !important;
     width: inherit !important;
   }
-  .node-type-empreendimentos .second-section .form-interest h2 {
+  .node-type-empreendimentos .form-interest h2 {
     text-align: center;
   }
-  .node-type-empreendimentos .second-section .form-interest .webform-client-form {
+  .node-type-empreendimentos .form-interest .webform-client-form {
     padding: 0;
   }
-  .node-type-empreendimentos .second-section .form-interest .webform-client-form .webform-component--preencha-dados {
+  .node-type-empreendimentos .form-interest .webform-client-form .webform-component--preencha-dados {
     text-align: center;
+  }
+  .node-type-empreendimentos .form-interest.form-individual .content {
+    width: inherit;
   }
   .css-b-emp-internas {
     display: inherit;
@@ -1497,6 +1543,9 @@ footer .whats-phone .info .text {
     float: inherit;
     margin: 0 auto !important;
     width: 310px;
+  }
+  footer {
+    margin: 0 0 130px !important;
   }
   footer #block-views-rodape-block {
     text-align: center;

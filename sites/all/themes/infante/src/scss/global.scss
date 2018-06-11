@@ -249,11 +249,11 @@ header{
 		position: relative;	
 		.owl-wrapper-outer{
 			padding:30px 0 0;
-			width: 642px;
+			/* width: 642px; */
 		}
 		.owl-buttons{
 			position: absolute;
-			right: 0;
+			right: -80px;
 			top: 0;
 			div{
 				position: absolute;
@@ -273,12 +273,14 @@ header{
 		}
 	}
 	.owl-item{
-		width: 310px !important;
-		margin: 0 5px 10px 10px;
+		/* width: 310px !important;
+		margin: 0 5px 10px 10px; */
+		margin: 0;
 		.carousel-empreendimentos{
 			float: left;
-			margin: 0 30px 0 0 !important;
-			position: relative;
+			/* margin: 0 30px 0 0 !important;
+			position: relative; */
+			margin: 0;
 			.icons-list{
 				position: absolute;
 				top: -30px;
@@ -440,8 +442,8 @@ header{
 					right: -90px;
 					text-align: center;
 					text-transform: uppercase;
-					transform: rotate(35deg);
-					top: 20px;
+					transform: rotate(40deg);
+					top: 28px;
 					width: 290px;
 					letter-spacing: 1px;
 				}
@@ -541,6 +543,7 @@ header{
 	.second-block{
 		.news-infante{
 			height: 480px;
+			background-size: contain;
 			.news-fields{
 				float: right;
 				width: 500px;
@@ -549,6 +552,7 @@ header{
 					font-size: 35px;
 					color: $dark-blue;
 					line-height: 40px;
+					margin: 0 0 30px;
 				}
 				.text{
 					font-size: 18px;
@@ -791,8 +795,26 @@ header{
 
 
 .node-type-empreendimentos{
+	.image{
+		position: relative;
+		overflow: hidden;
+	}
 	.image-highlighted{
 		height: 360px;
+	}
+	.tag{
+		background-color: $main-blue;
+		color: #fff;
+		font-family: $font-sourcerbold;
+		padding: 10px 70px;
+		position: absolute;
+		right: -75px;
+		text-align: center;
+		text-transform: uppercase;
+		transform: rotate(40deg);
+		top: 30px;
+		width: 290px;
+		letter-spacing: 1px;
 	}
 	.image-brand{
 		text-align: center;
@@ -946,7 +968,7 @@ header{
 			.content{
 				padding: 0;
 				margin: 50px auto;
-				width: 600px;
+				width: 555px;
 				float: inherit;
 			}
 			.btn{
@@ -1076,13 +1098,21 @@ footer{
 		i, .info, .text, .phone{
 			display: inline-block;
 			font-size: 18px;
+			color: $light-blue;
 		}
 		i, .info{
 			margin: 0 5px 0 0;
-			color: $main-blue;
 		}
 		.text, .phone{
 			margin: 0 5px 0 0;
+		}
+		.phone{
+			a{
+				color: $light-blue;
+				&:hover{
+					color: white;
+				}
+			}
 		}
 		.info{
 			.text{
