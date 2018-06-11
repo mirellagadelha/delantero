@@ -145,24 +145,28 @@
 	.css-block-empreendimentos{
 		.owl-carousel{
 			.owl-buttons{
-				position: absolute;
+				position: relative;
 				bottom: 0;
 				width: 100%;
+				right: 0;
 				div{
 					display: inline-block;
 					opacity: 1;
 					border: 0;
 					right: inherit !important;
 					left: inherit !important;
-					top: 330px!important;
+					top: 0!important;
 					position: relative;
 					background: transparent;
+					border: 1px solid $light-blue;
 					i{ font-size: 12px; }
 					&.owl-prev{
 						left: inherit;
+						top: inherit;
 					}
 					&.owl-next{
 						right: inherit;
+						top: inherit;
 					}
 				}
 			}

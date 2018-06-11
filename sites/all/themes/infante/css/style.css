@@ -1446,9 +1446,10 @@ footer .whats-phone .info .text {
     right: 15px;
   }
   .css-block-empreendimentos .owl-carousel .owl-buttons {
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
+    right: 0;
   }
   .css-block-empreendimentos .owl-carousel .owl-buttons div {
     display: inline-block;
@@ -1456,18 +1457,21 @@ footer .whats-phone .info .text {
     border: 0;
     right: inherit !important;
     left: inherit !important;
-    top: 330px !important;
+    top: 0 !important;
     position: relative;
     background: transparent;
+    border: 1px solid #95c4d7;
   }
   .css-block-empreendimentos .owl-carousel .owl-buttons div i {
     font-size: 12px;
   }
   .css-block-empreendimentos .owl-carousel .owl-buttons div.owl-prev {
     left: inherit;
+    top: inherit;
   }
   .css-block-empreendimentos .owl-carousel .owl-buttons div.owl-next {
     right: inherit;
+    top: inherit;
   }
   .node-type-institucional .region-content {
     width: inherit;
