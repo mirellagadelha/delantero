@@ -151,6 +151,7 @@ header .navbar-header .logo {
   position: relative;
   height: 510px;
   background-size: cover;
+  background-position: center center;
 }
 
 .css-block-superbanner .super-banner .container {
@@ -357,7 +358,7 @@ header .navbar-header .logo {
 .css-block-empreendimentos .owl-item .carousel-empreendimentos .icons-list .title-icon i,
 .css-b-emp-internas .owl-item .carousel-empreendimentos .icons-list .title-icon i {
   color: white;
-  background: #00aecc;
+  background: #294052;
   display: inline-block;
   width: 45px;
   height: 45px;
@@ -533,11 +534,11 @@ header .navbar-header .logo {
   font-family: "SourceSansProBold", sans;
   padding: 10px 70px;
   position: absolute;
-  right: -90px;
+  right: -85px;
   text-align: center;
   text-transform: uppercase;
   transform: rotate(40deg);
-  top: 28px;
+  top: 33px;
   width: 290px;
   letter-spacing: 1px;
 }
@@ -1317,6 +1318,16 @@ footer .whats-phone .info .text {
   font-weight: normal;
 }
 
+.pager--infinite-scroll li a {
+  background: #00aecc;
+  color: white;
+  border: 1px solid #00aecc;
+}
+
+.pager--infinite-scroll li a:hover {
+  border: 1px solid #95c4d7;
+}
+
 /* 
 ##Device = Most of the Smartphones Mobiles (Portrait)
 ##Screen = B/w 320px to 479px
@@ -1381,16 +1392,21 @@ footer .whats-phone .info .text {
   .css-block-bannerinterna .super-banner {
     height: 260px;
     font-size: 25px;
+    background-size: cover;
+    background-position: center center;
   }
   .css-block-bannerinterna .super-banner:before {
     height: 260px;
   }
   .css-block-bannerinterna .super-banner .fields-banner {
-    z-index: 10;
+    z-index: 0;
     position: relative;
   }
   .css-block-bannerinterna .super-banner .subtitle {
     padding: 0 20px;
+  }
+  #block-block-1 .button-contact a {
+    margin: 0;
   }
   #block-block-2 {
     text-align: center;
@@ -1446,9 +1462,10 @@ footer .whats-phone .info .text {
     right: 15px;
   }
   .css-block-empreendimentos .owl-carousel .owl-buttons {
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
+    right: 0;
   }
   .css-block-empreendimentos .owl-carousel .owl-buttons div {
     display: inline-block;
@@ -1456,18 +1473,21 @@ footer .whats-phone .info .text {
     border: 0;
     right: inherit !important;
     left: inherit !important;
-    top: 330px !important;
+    top: 0px !important;
     position: relative;
     background: transparent;
+    border: 1px solid #95c4d7;
   }
   .css-block-empreendimentos .owl-carousel .owl-buttons div i {
     font-size: 12px;
   }
   .css-block-empreendimentos .owl-carousel .owl-buttons div.owl-prev {
     left: inherit;
+    top: inherit;
   }
   .css-block-empreendimentos .owl-carousel .owl-buttons div.owl-next {
     right: inherit;
+    top: inherit;
   }
   .node-type-institucional .region-content {
     width: inherit;
@@ -1533,11 +1553,14 @@ footer .whats-phone .info .text {
   .node-type-empreendimentos .form-interest.form-individual .content {
     width: inherit;
   }
+  .node-type-empreendimentos footer {
+    margin: 0 0 80px !important;
+  }
   .css-b-emp-internas {
     display: inherit;
   }
   .css-b-emp-internas .views-row {
-    margin: 0 0 100px;
+    margin: 0 0 60px;
   }
   .css-b-emp-internas .views-row .interna-empreendimentos {
     float: inherit;
@@ -1545,7 +1568,7 @@ footer .whats-phone .info .text {
     width: 310px;
   }
   footer {
-    margin: 0 0 130px !important;
+    margin: 0 0 80px !important;
   }
   footer #block-views-rodape-block {
     text-align: center;
@@ -1558,6 +1581,12 @@ footer .whats-phone .info .text {
   }
   footer .col-md-4 {
     text-align: center;
+  }
+  footer .whats-phone {
+    padding: 15px 0;
+  }
+  footer .whats-phone i, footer .whats-phone .info {
+    display: inline;
   }
 }
 

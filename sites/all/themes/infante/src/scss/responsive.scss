@@ -63,15 +63,24 @@
 		.super-banner{
 			height: 260px;
 			font-size: 25px;
+			background-size: cover;
+    		background-position: center center;
 			&:before{
 				height: 260px;
 			}
 			.fields-banner{
-				z-index: 10;
+				z-index: 0;
 				position: relative;
 			}
 			.subtitle{
 				padding: 0 20px;
+			}
+		}
+	}
+	#block-block-1{
+		.button-contact{
+			a{
+				margin:0;
 			}
 		}
 	}
@@ -145,24 +154,28 @@
 	.css-block-empreendimentos{
 		.owl-carousel{
 			.owl-buttons{
-				position: absolute;
+				position: relative;
 				bottom: 0;
 				width: 100%;
+				right: 0;
 				div{
 					display: inline-block;
 					opacity: 1;
 					border: 0;
 					right: inherit !important;
 					left: inherit !important;
-					top: 330px!important;
+					top: 0px!important;
 					position: relative;
 					background: transparent;
+					border: 1px solid $light-blue;
 					i{ font-size: 12px; }
 					&.owl-prev{
 						left: inherit;
+						top: inherit;
 					}
 					&.owl-next{
 						right: inherit;
+						top: inherit;
 					}
 				}
 			}
@@ -253,12 +266,15 @@
 				}
 			}
 		}
+		footer{
+			margin: 0 0 80px !important;
+		}
 	}
 
 	.css-b-emp-internas{
 		display: inherit;
 		.views-row{
-			margin: 0 0 100px;
+			margin: 0 0 60px;
 			.interna-empreendimentos {
 				float: inherit;
 				margin: 0 auto !important;
@@ -267,7 +283,7 @@
 		}
 	}
 	footer{
-		margin: 0 0 130px !important;
+		margin: 0 0 80px !important;
 		#block-views-rodape-block{
 			text-align: center;
 			img{
@@ -279,6 +295,12 @@
 		}
 		.col-md-4{
 			text-align: center;
+		}
+		.whats-phone{
+			padding: 15px 0;
+			i,.info {
+	    		display: inline;
+			}
 		}
 	}
 }

@@ -115,6 +115,7 @@ header{
 		position: relative;
 		height: 510px;
 		background-size: cover;
+		background-position: center center;
 		.container{
 			height: 510px;
 			align-items: center;
@@ -292,7 +293,7 @@ header{
 					text-align: center;
 					i{
 						color: white;
-						background: $main-blue;
+						background: $dark-blue;
 						display: inline-block;
 						width: 45px;
 						height: 45px;
@@ -439,11 +440,11 @@ header{
 					font-family: $font-sourcerbold;
 					padding: 10px 70px;
 					position: absolute;
-					right: -90px;
+					right: -85px;
 					text-align: center;
 					text-transform: uppercase;
 					transform: rotate(40deg);
-					top: 28px;
+					top: 33px;
 					width: 290px;
 					letter-spacing: 1px;
 				}
@@ -1147,6 +1148,19 @@ footer{
 		#user-login, #user-pass{
 			.control-label{
 				font-weight: normal;
+			}
+		}
+	}
+}
+
+.pager--infinite-scroll{
+	li{
+		a{
+			background: $main-blue;
+			color: white;
+			border: 1px solid $main-blue;
+			&:hover{
+				border: 1px solid $light-blue;
 			}
 		}
 	}
