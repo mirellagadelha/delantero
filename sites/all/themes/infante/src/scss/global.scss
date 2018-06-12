@@ -404,7 +404,7 @@ header{
 					text-align: center;
 					i{
 						color: white;
-						background: $main-blue;
+						background: $dark-blue;
 						display: inline-block;
 						width: 45px;
 						height: 45px;
@@ -438,7 +438,7 @@ header{
 					background-color: $main-blue;
 					color: #fff;
 					font-family: $font-sourcerbold;
-					padding: 10px 70px;
+					padding: 10px 80px;
 					position: absolute;
 					right: -85px;
 					text-align: center;
@@ -544,7 +544,8 @@ header{
 	.second-block{
 		.news-infante{
 			height: 480px;
-			background-size: contain;
+		    background-position: center center;
+		    background-size: cover;
 			.news-fields{
 				float: right;
 				width: 500px;

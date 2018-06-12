@@ -493,7 +493,7 @@ header .navbar-header .logo {
 .css-block-empreendimentos .views-row .interna-empreendimentos .icons-list .title-icon i,
 .css-b-emp-internas .views-row .interna-empreendimentos .icons-list .title-icon i {
   color: white;
-  background: #00aecc;
+  background: #294052;
   display: inline-block;
   width: 45px;
   height: 45px;
@@ -532,7 +532,7 @@ header .navbar-header .logo {
   background-color: #00aecc;
   color: #fff;
   font-family: "SourceSansProBold", sans;
-  padding: 10px 70px;
+  padding: 10px 80px;
   position: absolute;
   right: -85px;
   text-align: center;
@@ -645,7 +645,8 @@ header .navbar-header .logo {
 
 #block-views-blocos-customizados-b-custom .second-block .news-infante {
   height: 480px;
-  background-size: contain;
+  background-position: center center;
+  background-size: cover;
 }
 
 #block-views-blocos-customizados-b-custom .second-block .news-infante .news-fields {
