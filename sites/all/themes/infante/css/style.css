@@ -1473,7 +1473,7 @@ footer .whats-phone .info .text {
     border: 0;
     right: inherit !important;
     left: inherit !important;
-    top: 0px !important;
+    top: 0 !important;
     position: relative;
     background: transparent;
     border: 1px solid #95c4d7;
