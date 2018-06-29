@@ -137,6 +137,7 @@ header .navbar-header .logo {
   background: #95c4d7;
   border: none;
   text-align: center;
+  left: -40px;
 }
 
 .block-menu ul.menu.nav li ul.dropdown-menu li {
@@ -1474,6 +1475,12 @@ footer .whats-phone .info .text {
   }
   header .navbar-collapse .block-menu ul.menu.nav li {
     display: block;
+  }
+  header .navbar-collapse .block-menu ul.menu.nav li ul.dropdown-menu {
+    position: relative;
+    left: inherit;
+    top: inherit;
+    float: inherit;
   }
   .css-block-superbanner .owl-buttons {
     display: none;
