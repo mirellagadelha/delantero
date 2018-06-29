@@ -132,6 +132,53 @@ header .navbar-header .logo {
   color: #00aecc;
 }
 
+.block-menu ul.menu.nav li ul.dropdown-menu {
+  border-radius: 8px;
+  background: #95c4d7;
+  border: none;
+  text-align: center;
+}
+
+.block-menu ul.menu.nav li ul.dropdown-menu li {
+  display: block;
+  border-bottom: 1px solid #b6d8e6;
+}
+
+.block-menu ul.menu.nav li ul.dropdown-menu li a {
+  color: white;
+  padding: 8px 20px;
+}
+
+.block-menu ul.menu.nav li ul.dropdown-menu li:hover a {
+  color: #294052;
+}
+
+.block-menu ul.menu.nav li ul.dropdown-menu li.active a {
+  color: #294052;
+  background: none;
+}
+
+.block-menu ul.menu.nav li ul.dropdown-menu li.last {
+  border: none;
+}
+
+.block-menu ul.menu.nav li ul.dropdown-menu:after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -8px;
+  width: 0;
+  height: 0;
+  border-bottom: 8px solid #95c4d7;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+
+.block-menu ul.menu.nav li.open a {
+  background: transparent;
+}
+
 #block-block-1 {
   float: right;
   text-align: right;
@@ -179,7 +226,10 @@ header .navbar-header .logo {
 }
 
 .css-block-bannerinterna .super-banner {
-  height: 370px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 270px;
   text-align: center;
   color: white;
   font-size: 45px;
@@ -198,7 +248,7 @@ header .navbar-header .logo {
   left: 0;
   top: 0;
   width: 100%;
-  height: 370px;
+  height: 270px;
 }
 
 .css-block-bannerinterna .super-banner .fields-banner {
@@ -283,17 +333,20 @@ header .navbar-header .logo {
 }
 
 .css-block-empreendimentos .owl-carousel,
+.css-b-emp-internas .owl-carousel,
 .css-b-emp-internas .owl-carousel {
   position: relative;
 }
 
 .css-block-empreendimentos .owl-carousel .owl-wrapper-outer,
+.css-b-emp-internas .owl-carousel .owl-wrapper-outer,
 .css-b-emp-internas .owl-carousel .owl-wrapper-outer {
   padding: 30px 0 0;
   /* width: 642px; */
 }
 
 .css-block-empreendimentos .owl-carousel .owl-buttons,
+.css-b-emp-internas .owl-carousel .owl-buttons,
 .css-b-emp-internas .owl-carousel .owl-buttons {
   position: absolute;
   right: -80px;
@@ -301,6 +354,7 @@ header .navbar-header .logo {
 }
 
 .css-block-empreendimentos .owl-carousel .owl-buttons div,
+.css-b-emp-internas .owl-carousel .owl-buttons div,
 .css-b-emp-internas .owl-carousel .owl-buttons div {
   position: absolute;
   top: 0;
@@ -309,23 +363,27 @@ header .navbar-header .logo {
 }
 
 .css-block-empreendimentos .owl-carousel .owl-buttons div i,
+.css-b-emp-internas .owl-carousel .owl-buttons div i,
 .css-b-emp-internas .owl-carousel .owl-buttons div i {
   font-size: 12px;
 }
 
 .css-block-empreendimentos .owl-carousel .owl-buttons div.owl-prev,
+.css-b-emp-internas .owl-carousel .owl-buttons div.owl-prev,
 .css-b-emp-internas .owl-carousel .owl-buttons div.owl-prev {
   left: -70px;
   top: 150px;
 }
 
 .css-block-empreendimentos .owl-carousel .owl-buttons div.owl-next,
+.css-b-emp-internas .owl-carousel .owl-buttons div.owl-next,
 .css-b-emp-internas .owl-carousel .owl-buttons div.owl-next {
   left: -70px;
   top: 80px;
 }
 
 .css-block-empreendimentos .owl-item,
+.css-b-emp-internas .owl-item,
 .css-b-emp-internas .owl-item {
   /* width: 310px !important;
 		margin: 0 5px 10px 10px; */
@@ -333,6 +391,7 @@ header .navbar-header .logo {
 }
 
 .css-block-empreendimentos .owl-item .carousel-empreendimentos,
+.css-b-emp-internas .owl-item .carousel-empreendimentos,
 .css-b-emp-internas .owl-item .carousel-empreendimentos {
   float: left;
   /* margin: 0 30px 0 0 !important;
@@ -341,6 +400,7 @@ header .navbar-header .logo {
 }
 
 .css-block-empreendimentos .owl-item .carousel-empreendimentos .icons-list,
+.css-b-emp-internas .owl-item .carousel-empreendimentos .icons-list,
 .css-b-emp-internas .owl-item .carousel-empreendimentos .icons-list {
   position: absolute;
   top: -30px;
@@ -349,6 +409,7 @@ header .navbar-header .logo {
 }
 
 .css-block-empreendimentos .owl-item .carousel-empreendimentos .icons-list .title-icon,
+.css-b-emp-internas .owl-item .carousel-empreendimentos .icons-list .title-icon,
 .css-b-emp-internas .owl-item .carousel-empreendimentos .icons-list .title-icon {
   position: relative;
   display: inline-block;
@@ -356,6 +417,7 @@ header .navbar-header .logo {
 }
 
 .css-block-empreendimentos .owl-item .carousel-empreendimentos .icons-list .title-icon i,
+.css-b-emp-internas .owl-item .carousel-empreendimentos .icons-list .title-icon i,
 .css-b-emp-internas .owl-item .carousel-empreendimentos .icons-list .title-icon i {
   color: white;
   background: #294052;
@@ -367,6 +429,7 @@ header .navbar-header .logo {
 }
 
 .css-block-empreendimentos .owl-item .carousel-empreendimentos .icons-list .title-icon .subtitle,
+.css-b-emp-internas .owl-item .carousel-empreendimentos .icons-list .title-icon .subtitle,
 .css-b-emp-internas .owl-item .carousel-empreendimentos .icons-list .title-icon .subtitle {
   visibility: hidden;
   position: absolute;
@@ -378,6 +441,7 @@ header .navbar-header .logo {
 }
 
 .css-block-empreendimentos .owl-item .carousel-empreendimentos .icons-list .title-icon:hover .subtitle,
+.css-b-emp-internas .owl-item .carousel-empreendimentos .icons-list .title-icon:hover .subtitle,
 .css-b-emp-internas .owl-item .carousel-empreendimentos .icons-list .title-icon:hover .subtitle {
   visibility: visible;
   background: white;
@@ -385,6 +449,7 @@ header .navbar-header .logo {
 }
 
 .css-block-empreendimentos .owl-item .carousel-empreendimentos .content-image,
+.css-b-emp-internas .owl-item .carousel-empreendimentos .content-image,
 .css-b-emp-internas .owl-item .carousel-empreendimentos .content-image {
   border-radius: 0 0 10px 10px;
   position: relative;
@@ -393,6 +458,7 @@ header .navbar-header .logo {
 }
 
 .css-block-empreendimentos .owl-item .carousel-empreendimentos .content-image .tag,
+.css-b-emp-internas .owl-item .carousel-empreendimentos .content-image .tag,
 .css-b-emp-internas .owl-item .carousel-empreendimentos .content-image .tag {
   background-color: #00aecc;
   color: #fff;
@@ -409,6 +475,7 @@ header .navbar-header .logo {
 }
 
 .css-block-empreendimentos .owl-item .carousel-empreendimentos .content-image .image a,
+.css-b-emp-internas .owl-item .carousel-empreendimentos .content-image .image a,
 .css-b-emp-internas .owl-item .carousel-empreendimentos .content-image .image a {
   opacity: 0;
   position: absolute;
@@ -430,6 +497,7 @@ header .navbar-header .logo {
 }
 
 .css-block-empreendimentos .owl-item .carousel-empreendimentos .content-image .image a:after,
+.css-b-emp-internas .owl-item .carousel-empreendimentos .content-image .image a:after,
 .css-b-emp-internas .owl-item .carousel-empreendimentos .content-image .image a:after {
   margin: 0 0 0 8px;
   content: "\f061";
@@ -437,12 +505,14 @@ header .navbar-header .logo {
 }
 
 .css-block-empreendimentos .owl-item .carousel-empreendimentos .content-image .image:hover a,
+.css-b-emp-internas .owl-item .carousel-empreendimentos .content-image .image:hover a,
 .css-b-emp-internas .owl-item .carousel-empreendimentos .content-image .image:hover a {
   opacity: 1;
-  height: 216px;
+  height: 243px;
 }
 
 .css-block-empreendimentos .owl-item .carousel-empreendimentos .content-image .footer,
+.css-b-emp-internas .owl-item .carousel-empreendimentos .content-image .footer,
 .css-b-emp-internas .owl-item .carousel-empreendimentos .content-image .footer {
   margin: 0;
   padding: 15px 20px;
@@ -450,12 +520,14 @@ header .navbar-header .logo {
 }
 
 .css-block-empreendimentos .owl-item .carousel-empreendimentos .content-image .footer .local,
+.css-b-emp-internas .owl-item .carousel-empreendimentos .content-image .footer .local,
 .css-b-emp-internas .owl-item .carousel-empreendimentos .content-image .footer .local {
   font-size: 12px;
   text-transform: uppercase;
 }
 
 .css-block-empreendimentos .owl-item .carousel-empreendimentos .content-image .footer .title,
+.css-b-emp-internas .owl-item .carousel-empreendimentos .content-image .footer .title,
 .css-b-emp-internas .owl-item .carousel-empreendimentos .content-image .footer .title {
   font-size: 18px;
   text-transform: uppercase;
@@ -464,11 +536,13 @@ header .navbar-header .logo {
 }
 
 .css-block-empreendimentos .views-row,
+.css-b-emp-internas .views-row,
 .css-b-emp-internas .views-row {
   margin: 0 0 60px;
 }
 
 .css-block-empreendimentos .views-row .interna-empreendimentos,
+.css-b-emp-internas .views-row .interna-empreendimentos,
 .css-b-emp-internas .views-row .interna-empreendimentos {
   float: left;
   margin: 0 30px 0 0 !important;
@@ -476,6 +550,7 @@ header .navbar-header .logo {
 }
 
 .css-block-empreendimentos .views-row .interna-empreendimentos .icons-list,
+.css-b-emp-internas .views-row .interna-empreendimentos .icons-list,
 .css-b-emp-internas .views-row .interna-empreendimentos .icons-list {
   position: absolute;
   top: -30px;
@@ -484,6 +559,7 @@ header .navbar-header .logo {
 }
 
 .css-block-empreendimentos .views-row .interna-empreendimentos .icons-list .title-icon,
+.css-b-emp-internas .views-row .interna-empreendimentos .icons-list .title-icon,
 .css-b-emp-internas .views-row .interna-empreendimentos .icons-list .title-icon {
   position: relative;
   display: inline-block;
@@ -491,6 +567,7 @@ header .navbar-header .logo {
 }
 
 .css-block-empreendimentos .views-row .interna-empreendimentos .icons-list .title-icon i,
+.css-b-emp-internas .views-row .interna-empreendimentos .icons-list .title-icon i,
 .css-b-emp-internas .views-row .interna-empreendimentos .icons-list .title-icon i {
   color: white;
   background: #294052;
@@ -502,6 +579,7 @@ header .navbar-header .logo {
 }
 
 .css-block-empreendimentos .views-row .interna-empreendimentos .icons-list .title-icon .subtitle,
+.css-b-emp-internas .views-row .interna-empreendimentos .icons-list .title-icon .subtitle,
 .css-b-emp-internas .views-row .interna-empreendimentos .icons-list .title-icon .subtitle {
   visibility: hidden;
   position: absolute;
@@ -513,6 +591,7 @@ header .navbar-header .logo {
 }
 
 .css-block-empreendimentos .views-row .interna-empreendimentos .icons-list .title-icon:hover .subtitle,
+.css-b-emp-internas .views-row .interna-empreendimentos .icons-list .title-icon:hover .subtitle,
 .css-b-emp-internas .views-row .interna-empreendimentos .icons-list .title-icon:hover .subtitle {
   visibility: visible;
   background: white;
@@ -520,6 +599,7 @@ header .navbar-header .logo {
 }
 
 .css-block-empreendimentos .views-row .interna-empreendimentos .content-image,
+.css-b-emp-internas .views-row .interna-empreendimentos .content-image,
 .css-b-emp-internas .views-row .interna-empreendimentos .content-image {
   border: 1px solid #e6e6e6;
   border-radius: 0 0 10px 10px;
@@ -528,6 +608,7 @@ header .navbar-header .logo {
 }
 
 .css-block-empreendimentos .views-row .interna-empreendimentos .content-image .tag,
+.css-b-emp-internas .views-row .interna-empreendimentos .content-image .tag,
 .css-b-emp-internas .views-row .interna-empreendimentos .content-image .tag {
   background-color: #00aecc;
   color: #fff;
@@ -544,6 +625,7 @@ header .navbar-header .logo {
 }
 
 .css-block-empreendimentos .views-row .interna-empreendimentos .content-image .image a,
+.css-b-emp-internas .views-row .interna-empreendimentos .content-image .image a,
 .css-b-emp-internas .views-row .interna-empreendimentos .content-image .image a {
   opacity: 0;
   position: absolute;
@@ -565,6 +647,7 @@ header .navbar-header .logo {
 }
 
 .css-block-empreendimentos .views-row .interna-empreendimentos .content-image .image a:after,
+.css-b-emp-internas .views-row .interna-empreendimentos .content-image .image a:after,
 .css-b-emp-internas .views-row .interna-empreendimentos .content-image .image a:after {
   margin: 0 0 0 8px;
   content: "\f061";
@@ -572,12 +655,14 @@ header .navbar-header .logo {
 }
 
 .css-block-empreendimentos .views-row .interna-empreendimentos .content-image .image:hover a,
+.css-b-emp-internas .views-row .interna-empreendimentos .content-image .image:hover a,
 .css-b-emp-internas .views-row .interna-empreendimentos .content-image .image:hover a {
   opacity: 1;
   height: 244px;
 }
 
 .css-block-empreendimentos .views-row .interna-empreendimentos .content-image .footer,
+.css-b-emp-internas .views-row .interna-empreendimentos .content-image .footer,
 .css-b-emp-internas .views-row .interna-empreendimentos .content-image .footer {
   margin: 0;
   padding: 15px 20px;
@@ -586,12 +671,14 @@ header .navbar-header .logo {
 }
 
 .css-block-empreendimentos .views-row .interna-empreendimentos .content-image .footer .local,
+.css-b-emp-internas .views-row .interna-empreendimentos .content-image .footer .local,
 .css-b-emp-internas .views-row .interna-empreendimentos .content-image .footer .local {
   font-size: 12px;
   text-transform: uppercase;
 }
 
 .css-block-empreendimentos .views-row .interna-empreendimentos .content-image .footer .title,
+.css-b-emp-internas .views-row .interna-empreendimentos .content-image .footer .title,
 .css-b-emp-internas .views-row .interna-empreendimentos .content-image .footer .title {
   font-size: 18px;
   text-transform: uppercase;
@@ -602,6 +689,10 @@ header .navbar-header .logo {
 .css-b-emp-internas {
   margin: 100px 0 60px;
   display: inline-block;
+}
+
+.node-empreendimentos-tags .css-b-emp-internas {
+  display: block;
 }
 
 #block-views-blocos-customizados-b-custom .first-block, #block-views-blocos-customizados-b-custom .second-block {
@@ -961,7 +1052,7 @@ header .navbar-header .logo {
 }
 
 .node-type-empreendimentos .title-brand {
-  margin: 80px 0;
+  margin: 40px 0 20px;
   font-size: 34px;
   text-align: center;
   color: #294052;
@@ -970,7 +1061,7 @@ header .navbar-header .logo {
 .node-type-empreendimentos .description {
   width: 560px;
   font-size: 18px;
-  margin: 30px auto;
+  margin: 0 auto 30px;
   text-align: center;
 }
 

@@ -96,6 +96,51 @@ header{
 					color: $main-blue;
 				}
 			}
+			ul.dropdown-menu{
+				border-radius: 8px;
+				background: $light-blue;
+				border: none;
+				text-align: center;
+				li{
+					display: block;
+					border-bottom: 1px solid #b6d8e6;
+					a{
+						color: white;
+						padding: 8px 20px;
+					}
+					&:hover{
+						a{
+							color: $dark-blue;
+						}
+					}
+					&.active{
+						a{
+							color: $dark-blue;
+							background: none;
+						}
+					}
+					&.last{
+						border: none;
+					}
+				}
+				&:after{
+					content: '';
+					position: absolute;
+					bottom: 100%;
+					left: 50%;
+					margin-left: -8px;
+					width: 0;
+					height: 0;
+					border-bottom: 8px solid $light-blue;
+					border-right: 8px solid transparent;
+					border-left: 8px solid transparent;
+				}
+			}
+			&.open{
+				a{
+					background: transparent;
+				}
+			}
 		}
 	}
 }
@@ -140,7 +185,10 @@ header{
 }
 .css-block-bannerinterna{
 	.super-banner{
-		height: 370px;
+		background-position: center bottom;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 270px;
 		text-align: center;
 		color: white;
 		font-size: 45px;
@@ -157,7 +205,7 @@ header{
 			left: 0;
 			top: 0;
 			width: 100%;
-			height: 370px;
+			height: 270px;
 		}
 		.fields-banner{
 			z-index: 10;
@@ -245,6 +293,7 @@ header{
 }
 
 .css-block-empreendimentos,
+.css-b-emp-internas,
 .css-b-emp-internas{
 	.owl-carousel{
 		position: relative;	
@@ -365,7 +414,7 @@ header{
 					&:hover{
 						a{
 							opacity: 1;
-							height:216px;
+							height:243px;
 						}
 					}
 				}
@@ -506,6 +555,12 @@ header{
 	display: inline-block;
 }
 
+.node-empreendimentos-tags{
+	.css-b-emp-internas{
+		display: block;
+	}
+}
+
 #block-views-blocos-customizados-b-custom{
 	.first-block, .second-block{
 		padding: 0;
@@ -544,8 +599,8 @@ header{
 	.second-block{
 		.news-infante{
 			height: 480px;
-		    background-position: center center;
-		    background-size: cover;
+			background-position: center center;
+			background-size: cover;
 			.news-fields{
 				float: right;
 				width: 500px;
@@ -824,7 +879,7 @@ header{
 		img{ display: inline-block; }
 	}
 	.title-brand{
-		margin: 80px 0;
+		margin: 40px 0 20px;
 		font-size: 34px;
 		text-align: center;
 		color: $dark-blue;
@@ -832,7 +887,7 @@ header{
 	.description{
 		width: 560px;
 		font-size: 18px;
-		margin: 30px auto;
+		margin: 0 auto 30px;
 		text-align: center;
 	}
 	.icons-list{
