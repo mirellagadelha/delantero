@@ -7,12 +7,17 @@ $main-blue: 		#00aecc;
 $dark-blue: 		#294052;
 $light-blue: 		#95c4d7;
 
-$bg-blue:			#3e7292;
+$bg-blue:			  #3e7292;
 $border-blue:		#7195ac;
 
 $main-gray:			#656565;
 $light-gray:		#d1d1d1;
-$footer:			#cfe4ec;
+$footer:		  	#cfe4ec;
+
+$dark-tag:      #315F7B;
+$main-tag:      #41AED8;
+$light-tag:     #95C4D7;
+$red-tag:       #7E1628;
 
 @mixin placeholder-color($color) {
   &::-webkit-input-placeholder { /* WebKit browsers */

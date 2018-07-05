@@ -98,7 +98,7 @@ header{
 			}
 			ul.dropdown-menu{
 				border-radius: 8px;
-				background: $light-blue;
+				background: $main-blue;
 				border: none;
 				text-align: center;
 				left: -40px;
@@ -132,7 +132,7 @@ header{
 					margin-left: -8px;
 					width: 0;
 					height: 0;
-					border-bottom: 8px solid $light-blue;
+					border-bottom: 8px solid $main-blue;
 					border-right: 8px solid transparent;
 					border-left: 8px solid transparent;
 				}
@@ -374,7 +374,7 @@ header{
 				overflow: hidden;
 				border: 1px solid #e6e6e6;
 				.tag{
-					background-color: $main-blue;
+					background-color: $main-tag;
 					color: #fff;
 					font-family: $font-sourcerbold;
 					padding: 10px 80px;
@@ -386,6 +386,15 @@ header{
 					top: 20px;
 					width: 290px;
 					letter-spacing: 1px;
+					&.realizado{
+						background: $dark-tag;
+					}
+					&.licenciamento {
+						background: $light-tag;
+					}
+					&.portugal {
+						background: $red-tag;
+					}
 				}
 				.image{
 					a{
@@ -485,7 +494,7 @@ header{
 				position: relative;
 				overflow: hidden;
 				.tag{
-					background-color: $main-blue;
+					background-color: $main-tag;
 					color: #fff;
 					font-family: $font-sourcerbold;
 					padding: 10px 80px;
@@ -497,6 +506,15 @@ header{
 					top: 33px;
 					width: 290px;
 					letter-spacing: 1px;
+					&.realizado{
+						background: $dark-tag;
+					}
+					&.licenciamento {
+						background: $light-tag;
+					}
+					&.portugal {
+						background: $red-tag;
+					}
 				}
 				.image{
 					a{
@@ -1113,6 +1131,18 @@ header{
 	}
 	.webform-component--indentifique-se {
 		margin: 0;
+	}
+}
+
+.page-node-59{
+	.webform-client-form{
+		margin: 0 0 60px;
+		h1{
+			margin: 0 0 20px;
+		}
+	}
+	.sale{
+		margin: 0 auto;
 	}
 }
 

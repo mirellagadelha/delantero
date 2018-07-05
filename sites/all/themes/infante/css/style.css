@@ -134,7 +134,7 @@ header .navbar-header .logo {
 
 .block-menu ul.menu.nav li ul.dropdown-menu {
   border-radius: 8px;
-  background: #95c4d7;
+  background: #00aecc;
   border: none;
   text-align: center;
   left: -40px;
@@ -171,7 +171,7 @@ header .navbar-header .logo {
   margin-left: -8px;
   width: 0;
   height: 0;
-  border-bottom: 8px solid #95c4d7;
+  border-bottom: 8px solid #00aecc;
   border-right: 8px solid transparent;
   border-left: 8px solid transparent;
 }
@@ -461,7 +461,7 @@ header .navbar-header .logo {
 .css-block-empreendimentos .owl-item .carousel-empreendimentos .content-image .tag,
 .css-b-emp-internas .owl-item .carousel-empreendimentos .content-image .tag,
 .css-b-emp-internas .owl-item .carousel-empreendimentos .content-image .tag {
-  background-color: #00aecc;
+  background-color: #41AED8;
   color: #fff;
   font-family: "SourceSansProBold", sans;
   padding: 10px 80px;
@@ -473,6 +473,24 @@ header .navbar-header .logo {
   top: 20px;
   width: 290px;
   letter-spacing: 1px;
+}
+
+.css-block-empreendimentos .owl-item .carousel-empreendimentos .content-image .tag.realizado,
+.css-b-emp-internas .owl-item .carousel-empreendimentos .content-image .tag.realizado,
+.css-b-emp-internas .owl-item .carousel-empreendimentos .content-image .tag.realizado {
+  background: #315F7B;
+}
+
+.css-block-empreendimentos .owl-item .carousel-empreendimentos .content-image .tag.licenciamento,
+.css-b-emp-internas .owl-item .carousel-empreendimentos .content-image .tag.licenciamento,
+.css-b-emp-internas .owl-item .carousel-empreendimentos .content-image .tag.licenciamento {
+  background: #95C4D7;
+}
+
+.css-block-empreendimentos .owl-item .carousel-empreendimentos .content-image .tag.portugal,
+.css-b-emp-internas .owl-item .carousel-empreendimentos .content-image .tag.portugal,
+.css-b-emp-internas .owl-item .carousel-empreendimentos .content-image .tag.portugal {
+  background: #7E1628;
 }
 
 .css-block-empreendimentos .owl-item .carousel-empreendimentos .content-image .image a,
@@ -611,7 +629,7 @@ header .navbar-header .logo {
 .css-block-empreendimentos .views-row .interna-empreendimentos .content-image .tag,
 .css-b-emp-internas .views-row .interna-empreendimentos .content-image .tag,
 .css-b-emp-internas .views-row .interna-empreendimentos .content-image .tag {
-  background-color: #00aecc;
+  background-color: #41AED8;
   color: #fff;
   font-family: "SourceSansProBold", sans;
   padding: 10px 80px;
@@ -623,6 +641,24 @@ header .navbar-header .logo {
   top: 33px;
   width: 290px;
   letter-spacing: 1px;
+}
+
+.css-block-empreendimentos .views-row .interna-empreendimentos .content-image .tag.realizado,
+.css-b-emp-internas .views-row .interna-empreendimentos .content-image .tag.realizado,
+.css-b-emp-internas .views-row .interna-empreendimentos .content-image .tag.realizado {
+  background: #315F7B;
+}
+
+.css-block-empreendimentos .views-row .interna-empreendimentos .content-image .tag.licenciamento,
+.css-b-emp-internas .views-row .interna-empreendimentos .content-image .tag.licenciamento,
+.css-b-emp-internas .views-row .interna-empreendimentos .content-image .tag.licenciamento {
+  background: #95C4D7;
+}
+
+.css-block-empreendimentos .views-row .interna-empreendimentos .content-image .tag.portugal,
+.css-b-emp-internas .views-row .interna-empreendimentos .content-image .tag.portugal,
+.css-b-emp-internas .views-row .interna-empreendimentos .content-image .tag.portugal {
+  background: #7E1628;
 }
 
 .css-block-empreendimentos .views-row .interna-empreendimentos .content-image .image a,
@@ -1318,6 +1354,18 @@ header .navbar-header .logo {
   margin: 0;
 }
 
+.page-node-59 .webform-client-form {
+  margin: 0 0 60px;
+}
+
+.page-node-59 .webform-client-form h1 {
+  margin: 0 0 20px;
+}
+
+.page-node-59 .sale {
+  margin: 0 auto;
+}
+
 footer {
   border: 0 !important;
   background-color: #cfe4ec;
@@ -1514,6 +1562,9 @@ footer .whats-phone .info .text {
   .css-block-empreendimentos .owl-carousel .owl-wrapper-outer {
     width: 100%;
   }
+  .region-blockgroup-g-empreendimentos {
+    margin: 60px auto 0;
+  }
   #block-views-blocos-customizados-b-custom .first-block, #block-views-blocos-customizados-b-custom .second-block {
     height: inherit;
   }
@@ -1526,16 +1577,13 @@ footer .whats-phone .info .text {
   }
   #block-views-blocos-customizados-b-custom .second-block .news-infante {
     background-size: cover;
+    background-image: none !important;
   }
   #block-views-blocos-customizados-b-custom .second-block .news-infante .news-fields {
     float: inherit;
     width: inherit;
     margin: 40px 20px;
     text-align: center;
-  }
-  #block-views-blocos-customizados-b-custom .second-block .news-infante .news-fields .text {
-    background: rgba(255, 255, 255, 0.6);
-    padding: 15px;
   }
   #block-views-blocos-customizados-b-custom .second-block .news-form {
     padding: 60px 30px;

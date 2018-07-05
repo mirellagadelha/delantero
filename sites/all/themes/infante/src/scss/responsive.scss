@@ -101,6 +101,10 @@
 			}
 		}
 	}
+	.region-blockgroup-g-empreendimentos{
+		margin: 60px auto 0;
+	}
+
 	#block-views-blocos-customizados-b-custom{
 		.first-block, .second-block{
 			height: inherit;
@@ -115,14 +119,13 @@
 			}
 			.news-infante{
 				background-size: cover;
+				background-image: none !important;
 				.news-fields{
 					float: inherit;
 					width: inherit;
 					margin: 40px 20px;
 					text-align: center;
 					.text{
-						background: rgba(255,255,255,.6);
-						padding: 15px;
 					}
 				}
 			}
